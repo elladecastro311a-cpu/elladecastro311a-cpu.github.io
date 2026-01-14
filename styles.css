@@ -25,13 +25,14 @@ a{color:inherit}
 .container{max-width:var(--max); margin:0 auto; padding:18px 16px 70px;}
 .topbar{
   position:sticky; top:0; z-index:10;
-  backdrop-filter: blur(10px);
   padding:12px 0;
+  background: rgba(11,12,16,.92);
+  border-bottom: 1px solid rgba(255,255,255,.08);
 }
 .navrow{
   display:flex; align-items:center; justify-content:space-between; gap:12px;
   border:1px solid rgba(255,255,255,.10);
-  background: rgba(10,10,16,.55);
+  background: rgba(11,12,16,.92);
   border-radius:18px;
   padding:10px 12px;
 }
