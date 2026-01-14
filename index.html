@@ -4,96 +4,95 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Ella Stephenson De Castro | Portfolio</title>
-  <!-- updated -->
-
-  <style>
-    body {
-      margin: 0;
-      font-family: Arial, Helvetica, sans-serif;
-      background: #0f0f0f;
-      color: #ffffff;
-    }
-
-    header {
-      padding: 60px 20px;
-      text-align: center;
-    }
-
-    header h1 {
-      font-size: 42px;
-      margin-bottom: 10px;
-    }
-
-    header p {
-      font-size: 18px;
-      opacity: 0.8;
-    }
-
-    nav {
-      text-align: center;
-      margin-bottom: 40px;
-    }
-
-    nav a {
-      color: white;
-      margin: 0 15px;
-      text-decoration: none;
-      font-weight: bold;
-    }
-
-    section {
-      max-width: 1000px;
-      margin: auto;
-      padding: 40px 20px;
-    }
-
-    .grid {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-      gap: 20px;
-    }
-
-    .card {
-      background: #1a1a1a;
-      padding: 20px;
-      border-radius: 8px;
-    }
-
-    footer {
-      text-align: center;
-      padding: 30px;
-      opacity: 0.6;
-    }
-  </style>
+  <meta name="description" content="Broadcast, video, and landscape photography portfolio." />
+  <link rel="stylesheet" href="styles.css" />
 </head>
-
 <body>
-
-  <header>
-    <h1>Ella Stephenson De Castro</h1>
-    <p>Video • Broadcast • Photography</p>
-  </header>
- 
-  <nav>
-    <a href="#">Work</a>
-    <a href="#">Video</a>
-    <a href="#">About</a>
-    <a href="#">Contact</a>
-  </nav>
-
-  <section>
-    <h2>Selected Work</h2>
-
-    <div class="grid">
-      <div class="card">Project 1 (coming soon)</div>
-      <div class="card">Project 2 (coming soon)</div>
-      <div class="card">Project 3 (coming soon)</div>
+  <div class="topbar">
+    <div class="container">
+      <div class="navrow">
+        <div class="brand"><span class="mark"></span> Ella Stephenson De Castro</div>
+        <nav class="nav">
+          <a href="index.html">Home</a>
+          <a href="photography.html">Photography</a>
+          <a href="video.html">Video</a>
+          <a href="about.html">About</a>
+        </nav>
+      </div>
     </div>
-  </section>
+  </div>
 
-  <footer>
-    © 2026 Ella Stephenson De Castro
-  </footer>
+  <div class="container">
+    <section class="hero">
+      <p class="kicker">Broadcast • Video • Photography</p>
+      <h1 class="h1">Visual storytelling across live broadcast and documentary work.</h1>
+      <p class="sub">
+        I’m a Digital Media Production student with live sports broadcast experience (Seminole Productions),
+        plus travel and landscape photography. My work is built for editorial clarity: clean frames, strong pacing,
+        and an eye for place.
+      </p>
 
+      <div class="cta">
+        <a class="btn primary" href="photography.html">View photography</a>
+        <a class="btn" href="video.html">View video</a>
+        <a class="btn" href="about.html">Contact</a>
+      </div>
+
+      <div class="badges">
+        <span class="badge">Morocco — Sahara Desert</span>
+        <span class="badge">Italy — Mille Miglia</span>
+        <span class="badge">Portugal — Streets</span>
+        <span class="badge">Sanibel — Coastal</span>
+        <span class="badge">Tallahassee — Snow Day</span>
+        <span class="badge">Live Broadcast</span>
+      </div>
+    </section>
+
+    <section class="section">
+      <h2>Featured</h2>
+      <p class="lead">A quick snapshot of what you’ll find inside.</p>
+
+      <div class="grid">
+        <a class="card" href="video.html" style="text-decoration:none;">
+          <span class="tag">Broadcast</span>
+          <h3>Live Production</h3>
+          <p>Live sports production experience with broadcast-ready standards and fast decision-making.</p>
+          <div class="arrow">↗</div>
+        </a>
+
+        <a class="card" href="photography.html#morocco" style="text-decoration:none;">
+          <span class="tag">Photography</span>
+          <h3>Morocco — Sahara Desert</h3>
+          <p>Landscape and atmosphere—scale, light, and place-first storytelling.</p>
+          <div class="arrow">↗</div>
+        </a>
+
+        <a class="card" href="photography.html#italy" style="text-decoration:none;">
+          <span class="tag">Editorial</span>
+          <h3>Italy — Mille Miglia</h3>
+          <p>Classic automotive history moving through Italian towns and roads—design, motion, culture.</p>
+          <div class="arrow">↗</div>
+        </a>
+      </div>
+    </section>
+
+    <hr class="sep"/>
+
+    <section class="section">
+      <h2>What I’m aiming for</h2>
+      <p class="lead">
+        Internships and production roles with major entertainment and editorial organizations
+        (documentary, news, and studio environments). This portfolio is curated for reviewers: strong selects,
+        clear categories, and fast loading.
+      </p>
+    </section>
+
+    <div class="footer">
+      <div>© <span id="y"></span> Ella Stephenson De Castro</div>
+      <div><a href="photography.html">Photography</a> · <a href="video.html">Video</a> · <a href="about.html">About</a></div>
+    </div>
+  </div>
+
+  <script>document.getElementById("y").textContent = new Date().getFullYear();</script>
 </body>
 </html>
