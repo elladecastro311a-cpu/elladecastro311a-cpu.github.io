@@ -4,7 +4,7 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Video | Ella Stephenson De Castro</title>
-  <meta name="description" content="Video portfolio: live broadcast, documentary, and short-form work." />
+  <meta name="description" content="Live broadcast and video work by Ella Stephenson De Castro." />
   <link rel="stylesheet" href="styles.css" />
 </head>
 
@@ -24,61 +24,82 @@
   </div>
 
   <div class="container">
-    <section class="storeHero">
+    <section class="hero">
       <p class="kicker">Video</p>
-      <h1 class="h1">Live broadcast and storytelling work.</h1>
+      <h1 class="h1">Live broadcast and game coverage.</h1>
       <p class="sub">
-        Selected clips and full pieces. More uploads coming as I finish exporting and organizing projects.
+        Selected ACC Network broadcasts filmed as the main game camera (Camera 1).
       </p>
-
-      <div class="collectionNav">
-        <a href="#broadcast">Live Broadcast</a>
-      </div>
     </section>
 
-    <!-- LIVE BROADCAST -->
-    <section class="collectionCard" id="broadcast">
+    <!-- LIVE BROADCAST SECTION -->
+    <section class="collection">
+
       <div class="collectionHeader">
-        <div>
-          <h2>Live Broadcast — ACC Network</h2>
-          <p>
-            December 19 — I operated the main game camera (Camera 1), capturing primary live gameplay coverage for the ACC Network broadcast.
-          </p>
-        </div>
-        <div class="meta"><span class="dot"></span><span>Game Cam — Cam 1</span></div>
+        <h3>Live Broadcast — ACC Network</h3>
+        <p>
+          Main game camera coverage for ACC Network basketball broadcasts during
+          the 2025–26 season.
+        </p>
       </div>
 
-      <div style="padding:14px;">
-        <div style="
-          border:1px solid rgba(255,255,255,.14);
-          background: rgba(255,255,255,.04);
-          border-radius: 18px;
-          overflow:hidden;
-          box-shadow: 0 12px 40px rgba(0,0,0,.45);
-        ">
-          <div style="aspect-ratio:16/9; background:#000;">
-            <iframe
-              src="https://www.youtube.com/embed/EmQeaXJ3KI4"
-              title="Live Broadcast — ACC Network (Camera 1)"
-              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-              allowfullscreen
-              style="width:100%; height:100%; border:0; display:block;">
-            </iframe>
-          </div>
+      <div style="display:grid; gap:20px;">
 
-          <div style="padding: 12px 14px; color: rgba(255,255,255,.72); font-size: 13px; line-height: 1.5;">
-            Main game camera coverage with live action framing, pacing, and consistent follow throughout the broadcast.
-          </div>
+        <!-- VIDEO 1 -->
+        <div class="photo">
+          <strong style="display:block; padding:12px;">
+            Mississippi Valley State vs Florida State — 2025–26 ACC Men’s Basketball
+          </strong>
+          <iframe
+            src="https://www.youtube.com/embed/EmQeaXJ3KI4"
+            allowfullscreen
+            style="width:100%; aspect-ratio:16/9; border:0;">
+          </iframe>
+          <p style="padding:12px; font-size:13px; color:rgba(255,255,255,.7);">
+            Mississippi Valley State vs Florida State game highlights from the 2025–26 ACC men’s basketball season, shot as the main game camera (Camera 1) for the ACC Network.
+          </p>
         </div>
+
+        <!-- VIDEO 2 -->
+        <div class="photo">
+          <strong style="display:block; padding:12px;">
+            South Carolina State vs Florida State — 2025–26 ACC Basketball
+          </strong>
+          <iframe
+            src="https://www.youtube.com/embed/b44-j7fHoEE"
+            allowfullscreen
+            style="width:100%; aspect-ratio:16/9; border:0;">
+          </iframe>
+          <p style="padding:12px; font-size:13px; color:rgba(255,255,255,.7);">
+            South Carolina State vs Florida State game highlights from the 2025–26 ACC season, filmed as the main game camera (Camera 1) for the ACC Network broadcast.
+          </p>
+        </div>
+
+        <!-- VIDEO 3 -->
+        <div class="photo">
+          <strong style="display:block; padding:12px;">
+            Virginia vs Florida State — 2025–26 ACC Women’s Basketball
+          </strong>
+          <iframe
+            src="https://www.youtube.com/embed/oDmaZ1W24E8"
+            allowfullscreen
+            style="width:100%; aspect-ratio:16/9; border:0;">
+          </iframe>
+          <p style="padding:12px; font-size:13px; color:rgba(255,255,255,.7);">
+            Virginia vs Florida State women’s basketball game highlights from the 2025–26 ACC season, captured on the main game camera (Camera 1).
+          </p>
+        </div>
+
       </div>
     </section>
 
     <div class="footer">
       <div>© <span id="y"></span> Ella Stephenson De Castro</div>
-      <div><a href="index.html">Home</a> · <a href="photography.html">Photography</a> · <a href="about.html">About</a></div>
     </div>
   </div>
 
-  <script>document.getElementById("y").textContent = new Date().getFullYear();</script>
+  <script>
+    document.getElementById("y").textContent = new Date().getFullYear();
+  </script>
 </body>
 </html>
