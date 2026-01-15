@@ -4,10 +4,12 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Ella Stephenson De Castro | Portfolio</title>
-  <meta name="description" content="Broadcast, video, and landscape photography portfolio." />
+  <meta name="description" content="Portfolio of Ella Stephenson De Castro — live sports broadcast, video, and photography." />
   <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
+
+  <!-- TOP NAV -->
   <div class="topbar">
     <div class="container">
       <div class="navrow">
@@ -23,75 +25,88 @@
   </div>
 
   <div class="container">
+
+    <!-- HERO -->
     <section class="hero">
-      <p class="kicker">Broadcast • Video • Photography</p>
-      <h1 class="h1">Visual storytelling across live broadcast and documentary work.</h1>
-   <p class="sub">
-  Double major in Digital Media Production and Entrepreneurship at Florida State University,
-  with live sports broadcast experience (Seminole Productions) and a focus on travel and landscape photography.
-</p>
+      <p class="kicker">Broadcast · Video · Photography</p>
+      <h1 class="h1">Visual storytelling for live broadcast and documentary work.</h1>
+      <p class="sub">
+        Portfolio featuring ACC Network game coverage, video projects, and curated travel/editorial photography collections.
+      </p>
 
       <div class="cta">
-        <a class="btn primary" href="photography.html">View photography</a>
-        <a class="btn" href="video.html">View video</a>
-        <a class="btn" href="about.html">Contact</a>
+        <a class="btn primary" href="video.html">Watch Video Work</a>
+        <a class="btn" href="photography.html">View Photography</a>
+        <a class="btn" href="about.html">About Me</a>
       </div>
 
       <div class="badges">
-        <span class="badge">Morocco — Sahara Desert</span>
-        <span class="badge">Italy — Mille Miglia</span>
-        <span class="badge">Portugal — Streets</span>
-        <span class="badge">Sanibel — Coastal</span>
-        <span class="badge">Tallahassee — Snow Day</span>
-        <span class="badge">Live Broadcast</span>
+        <a class="badge" href="video.html" style="text-decoration:none;">Live Broadcast</a>
+        <a class="badge" href="photography.html#morocco" style="text-decoration:none;">Morocco</a>
+        <a class="badge" href="photography.html#italy" style="text-decoration:none;">Italy</a>
+        <a class="badge" href="photography.html#portugal" style="text-decoration:none;">Portugal</a>
+        <a class="badge" href="photography.html#sanibel" style="text-decoration:none;">Sanibel</a>
+        <a class="badge" href="photography.html#snow" style="text-decoration:none;">Tallahassee Snow</a>
       </div>
     </section>
 
+    <!-- SELECTED WORK -->
     <section class="section">
-      <h2>Featured</h2>
-      <p class="lead">A quick snapshot of what you’ll find inside.</p>
+      <h2>Selected Work</h2>
+      <p class="lead">Quick entry points to the strongest sections of the site.</p>
 
       <div class="grid">
-        <a class="card" href="video.html" style="text-decoration:none;">
+        <a class="card" href="video.html">
           <span class="tag">Broadcast</span>
-          <h3>Live Production</h3>
-          <p>Live sports production experience with broadcast-ready standards and fast decision-making.</p>
+          <h3>ACC Network — Game Camera</h3>
+          <p>Live sports coverage with broadcast-ready framing, timing, and fast decision-making.</p>
           <div class="arrow">↗</div>
         </a>
 
-        <a class="card" href="photography.html#morocco" style="text-decoration:none;">
+        <a class="card" href="photography.html#morocco">
           <span class="tag">Photography</span>
           <h3>Morocco — Sahara Desert</h3>
-          <p>Landscape and atmosphere—scale, light, and place-first storytelling.</p>
+          <p>Landscape + atmosphere. A curated series focused on scale, light, and movement.</p>
           <div class="arrow">↗</div>
         </a>
 
-        <a class="card" href="photography.html#italy" style="text-decoration:none;">
+        <a class="card" href="photography.html#italy">
           <span class="tag">Editorial</span>
           <h3>Italy — Mille Miglia</h3>
-          <p>Classic automotive history moving through Italian towns and roads—design, motion, culture.</p>
+          <p>Classic automotive culture photographed with a clean editorial approach.</p>
           <div class="arrow">↗</div>
         </a>
       </div>
     </section>
 
-    <hr class="sep"/>
+    <hr class="sep" />
 
+    <!-- QUICK ABOUT -->
     <section class="section">
-      <h2>What I’m aiming for</h2>
+      <h2>About</h2>
       <p class="lead">
-        Internships and production roles with major entertainment and editorial organizations
-        (documentary, news, and studio environments). This portfolio is curated for reviewers: strong selects,
-        clear categories, and fast loading.
+        I’m a Digital Media Production & Entrepreneurship student at Florida State University with experience in
+        live sports broadcast (Seminole Productions) and a focus on travel and landscape photography.
       </p>
+      <div class="cta">
+        <a class="btn" href="about.html">Read More</a>
+      </div>
     </section>
 
+    <!-- FOOTER -->
     <div class="footer">
       <div>© <span id="y"></span> Ella Stephenson De Castro</div>
-      <div><a href="photography.html">Photography</a> · <a href="video.html">Video</a> · <a href="about.html">About</a></div>
+      <div>
+        <a href="photography.html">Photography</a> ·
+        <a href="video.html">Video</a> ·
+        <a href="about.html">About</a>
+      </div>
     </div>
+
   </div>
 
-  <script>document.getElementById("y").textContent = new Date().getFullYear();</script>
+  <script>
+    document.getElementById("y").textContent = new Date().getFullYear();
+  </script>
 </body>
 </html>
