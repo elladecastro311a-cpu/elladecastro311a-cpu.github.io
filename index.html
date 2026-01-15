@@ -3,17 +3,21 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Ella Stephenson De Castro | Portfolio</title>
-  <meta name="description" content="Portfolio of Ella Stephenson De Castro — live sports broadcast, video, and photography." />
+  <title>Ella Stephenson De Castro — Portfolio</title>
+  <meta name="description" content="Photography and video portfolio of Ella Stephenson De Castro. Live broadcast, travel photography, and documentary work." />
   <link rel="stylesheet" href="styles.css" />
 </head>
+
 <body>
 
   <!-- TOP NAV -->
   <div class="topbar">
     <div class="container">
       <div class="navrow">
-        <div class="brand"><span class="mark"></span> Ella Stephenson De Castro</div>
+        <div class="brand">
+          <span class="mark"></span>
+          Ella Stephenson De Castro
+        </div>
         <nav class="nav">
           <a href="index.html">Home</a>
           <a href="photography.html">Photography</a>
@@ -24,78 +28,78 @@
     </div>
   </div>
 
+  <!-- HERO -->
   <div class="container">
-
-    <!-- HERO -->
     <section class="hero">
+
       <p class="kicker">Broadcast · Video · Photography</p>
-      <h1 class="h1">Visual storytelling for live broadcast and documentary work.</h1>
+
+      <h1 class="h1">
+        Visual storytelling across live broadcast, travel, and documentary work.
+      </h1>
+
       <p class="sub">
-        Portfolio featuring ACC Network game coverage, video projects, and curated travel/editorial photography collections.
+        I’m a Digital Media Production and Entrepreneurship student at Florida State University
+        with live sports broadcast experience through Seminole Productions and the ACC Network.
+        My work focuses on place, movement, and clarity — whether on the field or on the road.
       </p>
 
+      <!-- CTA BUTTONS -->
       <div class="cta">
-        <a class="btn primary" href="video.html">Watch Video Work</a>
-        <a class="btn" href="photography.html">View Photography</a>
-        <a class="btn" href="about.html">About Me</a>
+        <a href="photography.html" class="btn primary">
+          View Photography
+        </a>
+        <a href="video.html" class="btn">
+          Watch Video Work
+        </a>
       </div>
 
-      <div class="badges">
-        <a class="badge" href="video.html" style="text-decoration:none;">Live Broadcast</a>
-        <a class="badge" href="photography.html#morocco" style="text-decoration:none;">Morocco</a>
-        <a class="badge" href="photography.html#italy" style="text-decoration:none;">Italy</a>
-        <a class="badge" href="photography.html#portugal" style="text-decoration:none;">Portugal</a>
-        <a class="badge" href="photography.html#sanibel" style="text-decoration:none;">Sanibel</a>
-        <a class="badge" href="photography.html#snow" style="text-decoration:none;">Tallahassee Snow</a>
-      </div>
     </section>
 
-    <!-- SELECTED WORK -->
+    <hr class="sep">
+
+    <!-- FEATURED SECTIONS -->
     <section class="section">
-      <h2>Selected Work</h2>
-      <p class="lead">Quick entry points to the strongest sections of the site.</p>
+      <h2>What You’ll Find Here</h2>
+      <p class="lead">
+        A curated selection of work intended for internships, creative teams, and production environments.
+      </p>
 
       <div class="grid">
-        <a class="card" href="video.html">
+
+        <div class="card">
           <span class="tag">Broadcast</span>
-          <h3>ACC Network — Game Camera</h3>
-          <p>Live sports coverage with broadcast-ready framing, timing, and fast decision-making.</p>
-          <div class="arrow">↗</div>
-        </a>
+          <h3>Live Production</h3>
+          <p>
+            Game camera (Cam 1) experience for ACC Network broadcasts, including
+            NCAA men’s and women’s basketball.
+          </p>
+        </div>
 
-        <a class="card" href="photography.html#morocco">
+        <div class="card">
           <span class="tag">Photography</span>
-          <h3>Morocco — Sahara Desert</h3>
-          <p>Landscape + atmosphere. A curated series focused on scale, light, and movement.</p>
-          <div class="arrow">↗</div>
-        </a>
+          <h3>Travel & Landscape</h3>
+          <p>
+            Place-driven photography from Morocco, Italy, Portugal, and Florida,
+            focused on atmosphere, scale, and quiet moments.
+          </p>
+        </div>
 
-        <a class="card" href="photography.html#italy">
+        <div class="card">
           <span class="tag">Editorial</span>
-          <h3>Italy — Mille Miglia</h3>
-          <p>Classic automotive culture photographed with a clean editorial approach.</p>
-          <div class="arrow">↗</div>
-        </a>
-      </div>
-    </section>
+          <h3>Story-First Work</h3>
+          <p>
+            Documentary-influenced visuals that prioritize pacing, observation,
+            and narrative clarity.
+          </p>
+        </div>
 
-    <hr class="sep" />
-
-    <!-- QUICK ABOUT -->
-    <section class="section">
-      <h2>About</h2>
-      <p class="lead">
-        I’m a Digital Media Production & Entrepreneurship student at Florida State University with experience in
-        live sports broadcast (Seminole Productions) and a focus on travel and landscape photography.
-      </p>
-      <div class="cta">
-        <a class="btn" href="about.html">Read More</a>
       </div>
     </section>
 
     <!-- FOOTER -->
     <div class="footer">
-      <div>© <span id="y"></span> Ella Stephenson De Castro</div>
+      <div>© <span id="year"></span> Ella Stephenson De Castro</div>
       <div>
         <a href="photography.html">Photography</a> ·
         <a href="video.html">Video</a> ·
@@ -106,7 +110,8 @@
   </div>
 
   <script>
-    document.getElementById("y").textContent = new Date().getFullYear();
+    document.getElementById("year").textContent = new Date().getFullYear();
   </script>
+
 </body>
 </html>
