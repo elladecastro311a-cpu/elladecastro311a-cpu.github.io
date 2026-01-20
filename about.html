@@ -1,13 +1,19 @@
-<body>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>About | Ella Stephenson De Castro</title>
+  <meta name="description" content="About Ella Stephenson De Castro: broadcast camera work, interviews, documentary projects, and visual storytelling." />
+  <link rel="stylesheet" href="styles.css" />
+</head>
 
-  <!-- TOP BAR (same as home) -->
+<body>
+  <!-- Top Bar -->
   <div class="topbar">
     <div class="container">
       <div class="navrow">
-        <div class="brand">
-          <span class="mark"></span>
-          Ella Stephenson De Castro
-        </div>
+        <div class="brand"><span class="mark"></span> Ella Stephenson De Castro</div>
         <nav class="nav">
           <a href="index.html">Home</a>
           <a href="photography.html">Photography</a>
@@ -18,76 +24,59 @@
     </div>
   </div>
 
-  <!-- ABOUT -->
   <div class="container">
 
+    <!-- Hero -->
     <section class="storeHero">
       <p class="kicker">About</p>
-
-      <h1 class="h1">
-        Broadcast, film, and creative storytelling.
-      </h1>
-
+      <h1 class="h1">Broadcast precision, story first visuals.</h1>
       <p class="sub">
-        I’m Ella Stephenson De Castro — an FSU student double majoring in Digital Media Production and Commercial Entrepreneurship.
-        I work in live sports broadcast, interviews, documentary projects, and visual storytelling built with structure and intention.
+        I’m Ella Stephenson De Castro, an FSU student double majoring in Digital Media Production and Commercial Entrepreneurship.
+        I work in live sports broadcast and build cinematic, editorial visuals for story driven projects.
       </p>
+    </section>
 
-      <div class="aboutGrid">
-
-        <!-- PHOTO -->
-        <div class="aboutPhoto">
-          <img src="assets/assets/about/headshot.jpg" alt="Ella Stephenson De Castro">
+    <!-- About body -->
+    <section class="collectionCard">
+      <div class="collectionHeader">
+        <div>
+          <h2>Who I am</h2>
+          <p>Live production, interviews, documentary style work, and photography built to read cleanly for internship teams.</p>
         </div>
+        <div class="meta"><span class="dot"></span> Profile</div>
+      </div>
 
-        <!-- TEXT -->
-        <div class="aboutText">
-          <p>
-            My work blends broadcast precision with a cinematic eye. I focus on clarity, pacing,
-            and strong visual storytelling — whether I’m operating Camera 1 for live games or building
-            editorial photo series.
-          </p>
-
-          <p>
-            This portfolio highlights my experience in live production, interviews,
-            documentary-style work, and travel photography — designed to read cleanly for
-            internship and production teams.
-          </p>
-
-          <div class="contactCards">
-            <div class="contactCard">
-              <span>Email</span>
-              <a href="mailto:ella@email.com">ella@email.com</a>
-            </div>
-
-            <div class="contactCard">
-              <span>School</span>
-              Florida State University
-            </div>
-
-            <div class="contactCard">
-              <span>Focus</span>
-              Broadcast · Film · Photography
-            </div>
+      <div style="padding:18px;">
+        <!-- Image -->
+        <div class="frame" style="margin-bottom:16px;">
+          <div class="frameInner">
+            <!-- IMPORTANT: file is in your repo ROOT, named hero-on-set.jpg -->
+            <img src="hero-on-set.jpg">
           </div>
         </div>
 
+        <!-- Text -->
+        <p class="sub" style="margin-bottom:12px;">
+          My work blends broadcast execution with a filmmaker’s eye. I focus on clarity, pacing, and strong visual awareness,
+          whether I’m operating Camera 1 for live games or building an editorial photo series.
+        </p>
+
+        <p class="sub" style="margin-bottom:0;">
+          This portfolio highlights my experience in live production, interviews, documentary projects, and travel photography.
+          Built for internships and production teams.
+        </p>
       </div>
     </section>
 
+    <!-- Footer -->
     <div class="footer">
       <div>© <span id="y"></span> Ella Stephenson De Castro</div>
-      <div>
-        <a href="index.html">Home</a> ·
-        <a href="photography.html">Photography</a> ·
-        <a href="video.html">Video</a>
-      </div>
+      <div><a href="index.html">Home</a> · <a href="photography.html">Photography</a> · <a href="video.html">Video</a></div>
     </div>
-
   </div>
 
   <script>
     document.getElementById("y").textContent = new Date().getFullYear();
   </script>
-
 </body>
+</html>
