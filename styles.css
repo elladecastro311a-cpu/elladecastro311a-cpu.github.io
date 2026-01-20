@@ -482,3 +482,83 @@ a{color:inherit}
     grid-template-columns: 1fr;
   }
 }
+
+/* ===== Make MAIN tabs look bigger than sub tabs ===== */
+
+.tabs{
+  display:flex;
+  gap:14px;
+  flex-wrap:wrap;
+  margin: 14px 0 18px;
+}
+
+/* MAIN TAB BUTTONS (primary) */
+.tabBtn{
+  display:flex;
+  align-items:center;
+  gap:10px;
+
+  padding:14px 20px;              /* bigger */
+  border-radius:999px;
+
+  font-size:14px;                 /* bigger text */
+  font-weight:900;
+  letter-spacing:.02em;
+
+  border:1px solid rgba(255,255,255,.22);
+  background: rgba(255,255,255,.06);
+
+  cursor:pointer;
+  transition: transform .18s ease, background .18s ease, border-color .18s ease;
+}
+
+.tabBtn:hover{
+  transform: translateY(-2px);
+  background: rgba(255,255,255,.10);
+  border-color: rgba(255,255,255,.32);
+}
+
+.tabBtn.active{
+  background: linear-gradient(135deg, #d7c7a5, #9ae6b4);
+  color:#07070a;
+  border:none;
+}
+
+/* icon in main tab */
+.tabIcon{
+  font-size:16px;
+  line-height:1;
+}
+
+/* SUBTABS (secondary) */
+.subtabs{
+  display:flex;
+  gap:10px;
+  flex-wrap:wrap;
+  margin: 10px 0 16px;
+}
+
+.subtabBtn{
+  padding:9px 12px;               /* smaller */
+  border-radius:999px;
+
+  font-size:12px;                 /* smaller text */
+  font-weight:800;
+
+  border:1px solid rgba(255,255,255,.16);
+  background: rgba(255,255,255,.04);
+  color: rgba(255,255,255,.74);
+
+  cursor:pointer;
+  transition: .18s ease;
+}
+
+.subtabBtn:hover{
+  background: rgba(255,255,255,.08);
+}
+
+.subtabBtn.active{
+  background: rgba(255,255,255,.12);
+  color: rgba(255,255,255,.92);
+  border-color: rgba(255,255,255,.26);
+}
