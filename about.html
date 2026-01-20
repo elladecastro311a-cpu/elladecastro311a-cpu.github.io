@@ -4,9 +4,10 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>About | Ella Stephenson De Castro</title>
-  <meta name="description" content="About Ella Stephenson De Castro — broadcast, video, and photography." />
+  <meta name="description" content="About Ella Stephenson De Castro — Florida State University student, broadcast and documentary." />
   <link rel="stylesheet" href="styles.css" />
 </head>
+
 <body>
   <div class="topbar">
     <div class="container">
@@ -23,57 +24,86 @@
   </div>
 
   <div class="container">
-    <section class="hero">
-      <p class="kicker">About</p>
-      <h1 class="h1">Broadcast experience, documentary instincts.</h1>
-   <p class="sub">
-  I’m a double major in Digital Media Production and Entrepreneurship at Florida State University,
-  with live sports broadcast production experience through Seminole Productions and a background
-  in travel and landscape photography.
-</p>
-    </section>
 
-    <section class="section">
-      <h2>Core strengths</h2>
-      <div class="grid">
-        <div class="card">
-          <span class="tag">Broadcast</span>
-          <h3>Live production</h3>
-          <p>Fast, calm execution under pressure with attention to framing and timing.</p>
+    <section class="aboutHero">
+      <p class="kicker">About</p>
+
+      <div class="aboutGrid">
+
+        <!-- HEADSHOT -->
+        <div class="aboutPhoto">
+          <img src="assets/assets/headshot.jpg" alt="Ella Stephenson De Castro headshot" />
         </div>
-        <div class="card">
-          <span class="tag">Editorial</span>
-          <h3>Story clarity</h3>
-          <p>Clean pacing and visual hierarchy that reads well to reviewers.</p>
-        </div>
-        <div class="card">
-          <span class="tag">Photography</span>
-          <h3>Sense of place</h3>
-          <p>Landscape and travel work focused on atmosphere, light, and detail.</p>
+
+        <!-- TEXT -->
+        <div class="aboutCopy">
+          <h1 class="h1">Broadcast instincts. Documentary mindset.</h1>
+
+          <p class="sub">
+            I’m a student at <strong>Florida State University</strong>, double majoring in
+            <strong>Digital Media Production</strong> and <strong>Commercial Entrepreneurship</strong>.
+            My work centers on live broadcast execution and story-driven visual work —
+            combining technical precision with strong visual awareness.
+          </p>
+
+          <p class="sub">
+            Through Seminole Productions and the ACC Network, I’ve worked as
+            <strong>Camera 1</strong> on live sports broadcasts, responsible for primary game coverage,
+            interviews, and on-air moments. Outside of broadcast, my photography and documentary work
+            focuses on place, movement, and clarity.
+          </p>
+
+          <div class="aboutHighlights">
+            <div class="pill">Florida State University</div>
+            <div class="pill">Seminole Productions</div>
+            <div class="pill">ACC Network · Camera 1</div>
+            <div class="pill">Broadcast · Documentary · Photography</div>
+          </div>
+
         </div>
       </div>
     </section>
 
-<section class="section">
-  <h2>Contact</h2>
- <p class="lead">Available for internships and production opportunities.</p>
-  <div class="grid">
-    <div class="card" style="grid-column: span 12;">
-      <p class="smallNote">
-        <b>Email:</b> <a href="mailto:elladecastro311a@icloud.com">elladecastro311a@icloud.com</a><br/>
-        <b>LinkedIn:</b> <a href="https://www.linkedin.com/in/ella-de-castro" target="_blank" rel="noopener">linkedin.com/in/ella-de-castro</a>
-      </p>
-    </div>
-  </div>
-</section>
+    <!-- CONTACT BOXES -->
+    <section class="contactCards">
 
-    
+      <div class="contactCard">
+        <div class="contactLabel">Email</div>
+        <a class="contactValue" href="mailto:elladecastro311a@icloud.com">
+          elladecastro311a@icloud.com
+        </a>
+      </div>
+
+      <div class="contactCard">
+        <div class="contactLabel">Phone</div>
+        <a class="contactValue" href="tel:+13053026869">
+          (305) 302-6869
+        </a>
+      </div>
+
+      <div class="contactCard">
+        <div class="contactLabel">LinkedIn</div>
+        <a class="contactValue" href="https://linkedin.com/in/ella-de-castro" target="_blank">
+          linkedin.com/in/ella-de-castro
+        </a>
+      </div>
+
+    </section>
+
     <div class="footer">
-    <div>© <span id="y"></span> Ella Stephenson De Castro · Portfolio</div>
-      <div><a href="index.html">Home</a> · <a href="photography.html">Photography</a> · <a href="video.html">Video</a></div>
+      <div>© <span id="y"></span> Ella Stephenson De Castro</div>
+      <div>
+        <a href="index.html">Home</a> ·
+        <a href="photography.html">Photography</a> ·
+        <a href="video.html">Video</a>
+      </div>
     </div>
+
   </div>
 
-  <script>document.getElementById("y").textContent = new Date().getFullYear();</script>
+  <script>
+    document.getElementById("y").textContent = new Date().getFullYear();
+  </script>
+
 </body>
 </html>
