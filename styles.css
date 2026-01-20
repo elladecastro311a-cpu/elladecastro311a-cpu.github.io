@@ -604,3 +604,106 @@ a{color:inherit}
   background: rgba(255,255,255,.12);
   transform: translateY(-1px);
 }
+
+/* ================= HOME PAGE CLEANUP (PASTE BELOW EVERYTHING) ================= */
+
+/* CTA Buttons (replaces underlined link look) */
+.cta{
+  display:flex;
+  gap:12px;
+  flex-wrap:wrap;
+  margin-top:14px;
+}
+
+.btn{
+  display:inline-flex;
+  align-items:center;
+  justify-content:center;
+  gap:10px;
+  padding:10px 14px;
+  border-radius:999px;
+  text-decoration:none;
+  font-weight:800;
+  font-size:13px;
+  border:1px solid rgba(255,255,255,.16);
+  background: rgba(255,255,255,.04);
+  color: rgba(255,255,255,.90);
+  transition:transform .18s ease, background .18s ease, border-color .18s ease;
+}
+
+.btn:hover{
+  transform: translateY(-1px);
+  background: rgba(255,255,255,.08);
+  border-color: rgba(255,255,255,.24);
+}
+
+.btn.primary{
+  background: linear-gradient(135deg, #d7c7a5, #9ae6b4);
+  color:#07070a;
+  border:none;
+}
+
+.btn.primary:hover{
+  filter: brightness(1.02);
+}
+
+/* Make focusStrip look like a clean pill, not a big bar */
+.focusStrip{
+  margin-top: 18px;
+  padding: 10px 14px;
+  border-radius: 999px;
+  border: 1px solid rgba(255,255,255,.10);
+  background: rgba(255,255,255,.03);
+  color: rgba(255,255,255,.70);
+  font-size: 12.5px;
+  line-height: 1.35;
+  overflow:hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+
+/* Home 3-card grid */
+.cardGrid{
+  display:grid;
+  grid-template-columns: repeat(12, 1fr);
+  gap: 16px;
+  margin-top: 22px;
+}
+
+.homeCard{
+  grid-column: span 4;
+  border-radius: 22px;
+  border: 1px solid rgba(255,255,255,.12);
+  background: rgba(255,255,255,.035);
+  box-shadow: 0 18px 55px rgba(0,0,0,.35);
+  padding: 18px;
+}
+
+.homeCard .kicker{
+  margin:0 0 10px;
+}
+
+.homeCard h3{
+  margin: 6px 0 8px;
+}
+
+.homeCard p{
+  margin:0 0 12px;
+  color: rgba(255,255,255,.72);
+  line-height: 1.55;
+  font-size: 13.5px;
+}
+
+/* links inside cards: no underline until hover */
+.homeCard a{
+  text-decoration:none;
+  font-weight:800;
+}
+
+.homeCard a:hover{
+  text-decoration:underline;
+}
+
+@media(max-width: 900px){
+  .homeCard{ grid-column: span 12; }
+}
