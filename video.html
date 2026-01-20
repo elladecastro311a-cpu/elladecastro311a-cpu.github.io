@@ -4,20 +4,15 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Video | Ella Stephenson De Castro</title>
-  <meta name="description" content="Live broadcast and interview video work by Ella Stephenson De Castro." />
+  <meta name="description" content="Broadcast camera work, interviews, documentary, and informational storytelling." />
   <link rel="stylesheet" href="styles.css" />
 </head>
 
 <body>
-
-  <!-- TOP NAV -->
   <div class="topbar">
     <div class="container">
       <div class="navrow">
-        <div class="brand">
-          <span class="mark"></span>
-          Ella Stephenson De Castro
-        </div>
+        <div class="brand"><span class="mark"></span> Ella Stephenson De Castro</div>
         <nav class="nav">
           <a href="index.html">Home</a>
           <a href="photography.html">Photography</a>
@@ -29,161 +24,199 @@
   </div>
 
   <div class="container">
-
-    <!-- HERO -->
-    <section class="hero">
+    <section class="storeHero">
       <p class="kicker">Video</p>
-      <h1 class="h1">Live broadcast and interview coverage.</h1>
-      <p class="sub">
-        Selected basketball and football broadcasts along with interview-based productions.
-        All videos below were filmed as the main game camera or the primary interview camera (Camera 1).
-      </p>
+      <h1 class="h1">Broadcast, interviews, and story-driven work.</h1>
+      <p class="sub">Camera work for live sports and studio-style interviews, plus documentary and informational projects.</p>
     </section>
 
-    <!-- ACC NETWORK GAMES -->
-    <section class="section">
-      <h2>ACC Network — Game Broadcasts</h2>
-      <p class="lead">
-        Live basketball game coverage filmed as the main game camera (Camera 1)
-        for ACC Network broadcasts during the 2025–26 season.
-      </p>
+    <!-- ===== MAIN TABS ===== -->
+    <div class="tabs" role="tablist" aria-label="Video categories">
+      <button class="tabBtn active" role="tab" aria-selected="true" data-tab="sports">
+        <span class="tabIcon">🏟️</span> Sports Broadcast
+      </button>
+      <button class="tabBtn" role="tab" aria-selected="false" data-tab="docs">
+        <span class="tabIcon">🎬</span> Documentary + Informational
+      </button>
+    </div>
 
-      <div class="grid">
+    <!-- ===== TAB: SPORTS ===== -->
+    <div class="tabPanel active" id="tab-sports" role="tabpanel">
 
-        <div class="card">
-          <h3>Mississippi Valley State vs Florida State</h3>
-          <p>
-            2025–26 ACC men’s basketball game highlights.
-            I operated Camera 1, capturing primary live gameplay coverage.
-          </p>
-          <iframe
-            src="https://www.youtube.com/embed/EmQeaXJ3KI4"
-            allowfullscreen
-            style="width:100%; aspect-ratio:16/9; border-radius:12px; border:0;">
-          </iframe>
-        </div>
-
-        <div class="card">
-          <h3>South Carolina State vs Florida State</h3>
-          <p>
-            2025–26 ACC basketball broadcast.
-            Filmed as the main game camera (Camera 1) for ACC Network coverage.
-          </p>
-          <iframe
-            src="https://www.youtube.com/embed/b44-j7fHoEE"
-            allowfullscreen
-            style="width:100%; aspect-ratio:16/9; border-radius:12px; border:0;">
-          </iframe>
-        </div>
-
-        <div class="card">
-          <h3>Virginia vs Florida State — Women’s Basketball</h3>
-          <p>
-            2025–26 ACC women’s basketball game highlights.
-            Captured on the main game camera (Camera 1).
-          </p>
-          <iframe
-            src="https://www.youtube.com/embed/oDmaZ1W24E8"
-            allowfullscreen
-            style="width:100%; aspect-ratio:16/9; border-radius:12px; border:0;">
-          </iframe>
-        </div>
-
+      <!-- Subtabs -->
+      <div class="subtabs" role="tablist" aria-label="Sports subcategories">
+        <button class="subtabBtn active" data-subtab="acc">📺 ACC Network Highlights</button>
+        <button class="subtabBtn" data-subtab="shows">🎤 Seminole Shows</button>
       </div>
-    </section>
 
-    <hr class="sep">
+      <!-- Subpanel: ACC -->
+      <div class="subPanel active" id="sub-acc">
+        <div class="videoGrid">
 
-    <!-- INSIDE SEMINOLE FOOTBALL -->
-    <section class="section">
-      <h2>Seminole Productions — Inside Seminole Football</h2>
-      <p class="lead">
-        Live interview-based football show filmed on location.
-        I operated Camera 1, the primary interview camera responsible for interviewer and interviewee coverage.
-      </p>
+          <!-- ACC 1 -->
+          <div class="videoCard">
+            <div class="videoEmbed">
+              <iframe src="https://www.youtube.com/embed/EmQeaXJ3KI4" allowfullscreen></iframe>
+            </div>
+            <div class="videoMeta">
+              <h3><strong>Mississippi Valley State vs Florida State</strong></h3>
+              <p>ACC Network highlights. I operated Camera 1 (main game cam).</p>
+            </div>
+          </div>
 
-      <div class="grid">
+          <!-- ACC 2 -->
+          <div class="videoCard">
+            <div class="videoEmbed">
+              <iframe src="https://www.youtube.com/embed/b44-j7fHoEE" allowfullscreen></iframe>
+            </div>
+            <div class="videoMeta">
+              <h3><strong>South Carolina State vs Florida State</strong></h3>
+              <p>ACC Network highlights. I operated Camera 1 (main game cam).</p>
+            </div>
+          </div>
 
-        <div class="card">
-          <h3>Inside Seminole Football — Episode 10 (Virginia Tech)</h3>
-          <p>
-            Featuring Head Coach Mike Norvell, Florida State player Mandrell Desir,
-            and running backs coach David Johnson. Filmed for Seminole Productions.
-            I ran Camera 1, capturing all primary interview coverage.
-          </p>
+          <!-- ACC 3 -->
+          <div class="videoCard">
+            <div class="videoEmbed">
+              <iframe src="https://www.youtube.com/embed/oDmaZ1W24E8" allowfullscreen></iframe>
+            </div>
+            <div class="videoMeta">
+              <h3><strong>Virginia vs Florida State</strong></h3>
+              <p>ACC women’s basketball highlights. I operated Camera 1 (main game cam).</p>
+            </div>
+          </div>
 
-          <iframe
-            src="https://www.youtube.com/embed/8KyG5idt94U"
-            allowfullscreen
-            style="width:100%; aspect-ratio:16/9; border-radius:12px; border:0;">
-          </iframe>
         </div>
-
       </div>
-    </section>
 
-    <hr class="sep">
+      <!-- Subpanel: Shows -->
+      <div class="subPanel" id="sub-shows">
+        <div class="videoGrid">
 
-    <!-- INSIDE SEMINOLE BASKETBALL -->
-    <section class="section">
-      <h2>Seminole Productions — Inside Seminole Basketball</h2>
-      <p class="lead">
-        Live interview-based basketball show filmed on location.
-        I operated Camera 1, the main interview camera responsible for host and guest coverage.
-      </p>
+          <!-- Inside Seminole Football Ep 10 -->
+          <div class="videoCard">
+            <div class="videoEmbed">
+              <iframe src="https://www.youtube.com/embed/8KyG5idt94U" allowfullscreen></iframe>
+            </div>
+            <div class="videoMeta">
+              <h3><strong>Inside Seminole Football — Episode 10: Virginia Tech</strong></h3>
+              <p>I operated the main interview camera, capturing Coach Mike Norvell, Mandrell Desir, and RB Coach David Johnson.</p>
+            </div>
+          </div>
 
-      <div class="grid">
+          <!-- Inside Seminole Basketball Ep 1 -->
+          <div class="videoCard">
+            <div class="videoEmbed">
+              <iframe src="https://www.youtube.com/embed/iypooLatCB8" allowfullscreen></iframe>
+            </div>
+            <div class="videoMeta">
+              <h3><strong>Inside Seminole Basketball — Episode 1</strong></h3>
+              <p>Camera 1 (main interview cam). Featuring Head Coach Luke Loucks, Chauncey Wiggins, and Michael Fly.</p>
+            </div>
+          </div>
 
-        <div class="card">
-          <h3>Inside Seminole Basketball — Episode 1</h3>
-          <p>
-            Featuring Head Coach Luke Loucks, Florida State player Chauncey Wiggins,
-            and men’s basketball general manager Michael Fly.
-            Filmed at Glory Days for Seminole Productions.
-            I ran Camera 1, capturing the primary interview coverage.
-          </p>
+          <!-- Inside Seminole Basketball Ep 2 -->
+          <div class="videoCard">
+            <div class="videoEmbed">
+              <iframe src="https://www.youtube.com/embed/mpAfWsKi7ms" allowfullscreen></iframe>
+            </div>
+            <div class="videoMeta">
+              <h3><strong>Inside Seminole Basketball — Episode 2</strong></h3>
+              <p>Camera 1 (main interview cam). Featuring Head Coach Luke Loucks, Jeff Culhane, Assistant Coach Jim Moran, and Kobe Magee.</p>
+            </div>
+          </div>
 
-          <iframe
-            src="https://www.youtube.com/embed/iypooLatCB8"
-            allowfullscreen
-            style="width:100%; aspect-ratio:16/9; border-radius:12px; border:0;">
-          </iframe>
         </div>
-
-        <div class="card">
-          <h3>Inside Seminole Basketball — Episode 2</h3>
-          <p>
-            Featuring Head Coach Luke Loucks and Jeff Culhane, the Voice of the Seminoles,
-            with Assistant Coach Jim Moran and player Kobe Magee.
-            Filmed at Glory Days for Seminole Productions.
-            I operated Camera 1, the main interview camera for the episode.
-          </p>
-
-          <iframe
-            src="https://www.youtube.com/embed/mpAfWsKi7ms"
-            allowfullscreen
-            style="width:100%; aspect-ratio:16/9; border-radius:12px; border:0;">
-          </iframe>
-        </div>
-
-      </div>
-    </section>
-
-    <!-- FOOTER -->
-    <div class="footer">
-      <div>© <span id="year"></span> Ella Stephenson De Castro</div>
-      <div>
-        <a href="index.html">Home</a> ·
-        <a href="photography.html">Photography</a> ·
-        <a href="about.html">About</a>
       </div>
     </div>
 
+    <!-- ===== TAB: DOCS ===== -->
+    <div class="tabPanel" id="tab-docs" role="tabpanel">
+
+      <!-- Subtabs -->
+      <div class="subtabs" role="tablist" aria-label="Documentary subcategories">
+        <button class="subtabBtn active" data-subtab="doc">🎞️ Documentary</button>
+        <button class="subtabBtn" data-subtab="info">🧠 Informational</button>
+      </div>
+
+      <!-- Subpanel: Documentary -->
+      <div class="subPanel active" id="sub-doc">
+        <div class="videoGrid">
+          <div class="videoCard">
+            <div class="videoEmbed">
+              <iframe src="https://www.youtube.com/embed/HZwK5_i530s" allowfullscreen></iframe>
+            </div>
+            <div class="videoMeta">
+              <h3><strong>Documentary — Dog Euthanization</strong></h3>
+              <p>Documentary I directed exploring dog euthanization in animal shelters and the ethical debates behind it.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Subpanel: Informational -->
+      <div class="subPanel" id="sub-info">
+        <div class="videoGrid">
+          <div class="videoCard">
+            <div class="videoEmbed">
+              <iframe src="https://www.youtube.com/embed/61fEg5Bn5hA" allowfullscreen></iframe>
+            </div>
+            <div class="videoMeta">
+              <h3><strong>Holocaust Impact Theatre</strong></h3>
+              <p>One of ten informational videos on types of oppression and how we’ve faced these issues, including paths forward. Featured on Channel 10 News.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+    <div class="footer">
+      <div>© <span id="y"></span> Ella Stephenson De Castro</div>
+      <div><a href="index.html">Home</a> · <a href="photography.html">Photography</a> · <a href="about.html">About</a></div>
+    </div>
   </div>
 
   <script>
-    document.getElementById("year").textContent = new Date().getFullYear();
-  </script>
+    document.getElementById("y").textContent = new Date().getFullYear();
 
+    // Main tabs
+    const tabBtns = document.querySelectorAll(".tabBtn");
+    const tabPanels = document.querySelectorAll(".tabPanel");
+
+    function activateTab(tabName){
+      tabPanels.forEach(p => p.classList.remove("active"));
+      tabBtns.forEach(b => {
+        b.classList.remove("active");
+        b.setAttribute("aria-selected","false");
+      });
+
+      document.getElementById("tab-" + tabName).classList.add("active");
+      const activeBtn = document.querySelector(`.tabBtn[data-tab="${tabName}"]`);
+      activeBtn.classList.add("active");
+      activeBtn.setAttribute("aria-selected","true");
+    }
+
+    tabBtns.forEach(btn => {
+      btn.addEventListener("click", () => activateTab(btn.dataset.tab));
+    });
+
+    // Subtabs (scoped: each tabPanel has its own subtabs)
+    document.querySelectorAll(".tabPanel").forEach(panel => {
+      const subBtns = panel.querySelectorAll(".subtabBtn");
+      const subPanels = panel.querySelectorAll(".subPanel");
+
+      function activateSub(subName){
+        subPanels.forEach(p => p.classList.remove("active"));
+        subBtns.forEach(b => b.classList.remove("active"));
+        const target = panel.querySelector("#sub-" + subName);
+        if(target) target.classList.add("active");
+        const active = panel.querySelector(`.subtabBtn[data-subtab="${subName}"]`);
+        if(active) active.classList.add("active");
+      }
+
+      subBtns.forEach(b => b.addEventListener("click", () => activateSub(b.dataset.subtab)));
+    });
+  </script>
 </body>
 </html>
