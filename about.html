@@ -4,11 +4,12 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>About | Ella Stephenson De Castro</title>
-  <meta name="description" content="About Ella Stephenson De Castro — Florida State University student, broadcast and documentary." />
+  <meta name="description" content="About Ella Stephenson De Castro. Broadcast camera, film, and photography with an entrepreneurial mindset." />
   <link rel="stylesheet" href="styles.css" />
 </head>
 
 <body>
+  <!-- Top Bar -->
   <div class="topbar">
     <div class="container">
       <div class="navrow">
@@ -17,94 +18,73 @@
           <a href="index.html">Home</a>
           <a href="photography.html">Photography</a>
           <a href="video.html">Video</a>
-          <a href="about.html">About</a>
+          <a href="about.html" aria-current="page">About</a>
         </nav>
       </div>
     </div>
   </div>
 
-  <div class="container">
-
-    <section class="aboutHero">
+  <main class="container">
+    <section class="storeHero">
       <p class="kicker">About</p>
-
-      <div class="aboutGrid">
-
-        <!-- HEADSHOT -->
-        <div class="aboutPhoto">
-          <img src="assets/assets/headshot.jpg" alt="Ella Stephenson De Castro headshot" />
-        </div>
-
-        <!-- TEXT -->
-        <div class="aboutCopy">
-<h1 class="h1">Broadcast, film, and creative strategy</h1>
-
-<p class="sub">
-  Florida State University student double majoring in Digital Media Production and Commercial Entrepreneurship.
-</p>
-
-<p class="sub">
-  Focused on live sports broadcast, film, and photography with an emphasis on structure, execution, and real world storytelling.
-</p>
-
-          <p class="sub">
-            Through Seminole Productions and the ACC Network, I’ve worked as
-            <strong>Camera 1</strong> on live sports broadcasts, responsible for primary game coverage,
-            interviews, and on air moments. Outside of broadcast, my photography and documentary work
-            focuses on place, movement, and clarity.
-          </p>
-
-          <div class="aboutHighlights">
-            <div class="pill">Florida State University</div>
-            <div class="pill">Seminole Productions</div>
-            <div class="pill">ACC Network · Camera 1</div>
-            <div class="pill">Broadcast · Documentary · Photography</div>
-          </div>
-
-        </div>
-      </div>
+      <h1 class="h1">Broadcast precision, story-first visuals.</h1>
+      <p class="sub">
+        I’m Ella Stephenson De Castro, an FSU student double majoring in Digital Media Production and Commercial Entrepreneurship.
+        I work in live sports broadcast and build cinematic, editorial visuals for story-driven projects.
+      </p>
     </section>
 
-    <!-- CONTACT BOXES -->
-    <section class="contactCards">
-
-      <div class="contactCard">
-        <div class="contactLabel">Email</div>
-        <a class="contactValue" href="mailto:elladecastro311a@icloud.com">
-          elladecastro311a@icloud.com
-        </a>
+    <section class="aboutGrid">
+      <div class="aboutPhoto">
+        <!-- Change this path to whatever your headshot file is actually called -->
+        <img src="assets/assets/headshot.jpg" alt="Ella Stephenson De Castro" />
       </div>
 
-      <div class="contactCard">
-        <div class="contactLabel">Phone</div>
-        <a class="contactValue" href="tel:+13053026869">
-          (305) 302-6869
-        </a>
-      </div>
+      <div class="aboutText">
+        <h1>Ella Stephenson De Castro</h1>
+        <h3>Broadcast camera • Film • Photography</h3>
 
-      <div class="contactCard">
-        <div class="contactLabel">LinkedIn</div>
-        <a class="contactValue" href="https://linkedin.com/in/ella-de-castro" target="_blank">
-          linkedin.com/in/ella-de-castro
-        </a>
-      </div>
+        <p>
+          My work blends live broadcast execution with documentary and editorial storytelling.
+          I care about structure, pacing, and visuals that communicate fast.
+        </p>
 
+        <p>
+          The entrepreneurship side matters because I think in audience, strategy, and outcomes.
+          I’m building a portfolio that is production-ready for internships and creative teams.
+        </p>
+
+        <div class="contactCards">
+          <div class="contactCard">
+            <span>Email</span>
+            <a href="mailto:ess23e@fsu.edu">ess23e@fsu.edu</a>
+          </div>
+
+          <div class="contactCard">
+            <span>Portfolio</span>
+            <a href="index.html">Home</a>
+          </div>
+
+          <div class="contactCard">
+            <span>Work</span>
+            <a href="video.html">Video</a>
+          </div>
+        </div>
+      </div>
     </section>
 
     <div class="footer">
       <div>© <span id="y"></span> Ella Stephenson De Castro</div>
       <div>
-        <a href="index.html">Home</a> ·
         <a href="photography.html">Photography</a> ·
-        <a href="video.html">Video</a>
+        <a href="video.html">Video</a> ·
+        <a href="about.html">About</a>
       </div>
     </div>
-
-  </div>
+  </main>
 
   <script>
     document.getElementById("y").textContent = new Date().getFullYear();
   </script>
-
 </body>
 </html>
