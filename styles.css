@@ -707,3 +707,93 @@ a{color:inherit}
 @media(max-width: 900px){
   .homeCard{ grid-column: span 12; }
 }
+/* ===== HOME POLISH ===== */
+
+.homeHero{
+  padding: 42px 0 10px;
+  max-width: 980px;
+}
+
+.homeHero .h1{
+  letter-spacing: -0.03em;
+}
+
+.homeHero .sub{
+  max-width: 70ch;
+}
+
+/* Chips */
+.chips{
+  display:flex;
+  flex-wrap:wrap;
+  gap:10px;
+  margin: 10px 0 14px;
+}
+
+.chip{
+  font-size:12px;
+  font-weight:800;
+  letter-spacing:.02em;
+  padding:8px 12px;
+  border-radius:999px;
+  border:1px solid rgba(255,255,255,.16);
+  background: rgba(255,255,255,.04);
+  color: rgba(255,255,255,.78);
+}
+
+/* Cards layout polish */
+.cardGrid{
+  display:grid;
+  grid-template-columns: repeat(12, 1fr);
+  gap:14px;
+  margin-top: 20px;
+}
+
+.homeCard{
+  grid-column: span 4;
+  border-radius: 22px;
+  border: 1px solid rgba(255,255,255,.14);
+  background: linear-gradient(180deg, rgba(255,255,255,.06), rgba(255,255,255,.03));
+  box-shadow: 0 18px 55px rgba(0,0,0,.45);
+  padding: 18px;
+}
+
+.homeCard .label{
+  font-size:11px;
+  letter-spacing:.18em;
+  text-transform:uppercase;
+  color: rgba(255,255,255,.62);
+  margin-bottom: 10px;
+}
+
+.homeCard h3{
+  margin: 0 0 8px;
+  font-size: 20px;
+  letter-spacing: -.01em;
+}
+
+.homeCard p{
+  margin: 0 0 14px;
+  color: rgba(255,255,255,.72);
+  line-height: 1.6;
+}
+
+.homeLinks{
+  display:flex;
+  gap:14px;
+  flex-wrap:wrap;
+}
+
+.homeLinks a{
+  font-weight:800;
+  text-decoration:none;
+  border-bottom: 1px solid rgba(255,255,255,.25);
+}
+
+.homeLinks a:hover{
+  border-bottom-color: rgba(255,255,255,.55);
+}
+
+@media(max-width: 980px){
+  .homeCard{ grid-column: span 12; }
+}
