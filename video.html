@@ -135,8 +135,8 @@
 
       <!-- Subtabs -->
       <div class="subtabs" role="tablist" aria-label="Documentary subcategories">
-        <button class="subtabBtn active" data-subtab="doc">🎞️ Documentary</button>
-        <button class="subtabBtn" data-subtab="info">🧠 Informational</button>
+        <button class="subtabBtn active" type="button" data-subtab="doc">🎞️ Documentary</button>
+        <button class="subtabBtn" type="button" data-subtab="info">🧠 Informational</button>
       </div>
 
       <!-- Subpanel: Documentary -->
@@ -154,51 +154,49 @@
         </div>
       </div>
 
-    <!-- Subpanel: Informational -->
-<div class="subPanel" id="sub-info">
+      <!-- Subpanel: Informational -->
+      <div class="subPanel" id="sub-info">
+        <div class="videoGrid">
 
-  <div class="videoGrid">
+          <!-- VIDEO 1 -->
+          <div class="videoCard">
+            <div class="videoEmbed">
+              <iframe src="https://www.youtube.com/embed/61fEg5Bn5hA" allowfullscreen></iframe>
+            </div>
+            <div class="videoMeta">
+              <h3><strong>Holocaust Impact Theatre</strong></h3>
+              <p>One of ten informational videos examining types of oppression and how communities confront these issues. Featured on Channel 10 News.</p>
+            </div>
+          </div>
 
-    <!-- VIDEO 1 -->
-    <div class="videoCard">
-      <div class="videoEmbed">
-        <iframe
-          src="https://www.youtube.com/embed/61fEg5Bn5hA"
-          allowfullscreen>
-        </iframe>
+          <!-- VIDEO 2 -->
+          <div class="videoCard">
+            <div class="videoEmbed">
+              <iframe src="https://www.youtube.com/embed/jlcqW2JM0hQ" allowfullscreen></iframe>
+            </div>
+            <div class="videoMeta">
+              <h3><strong>Holocaust Impact Theatre</strong></h3>
+              <p>Two of ten informational videos examining types of oppression and how communities confront these issues. Featured on Channel 10 News.</p>
+            </div>
+          </div>
+
+        </div>
       </div>
 
-      <div class="videoMeta">
-        <h3><strong>Holocaust Impact Theatre</strong></h3>
-        <p>
-          One of ten informational videos examining types of oppression and how
-          communities confront these issues. Featured on Channel 10 News.
-        </p>
-      </div>
+    </div> <!-- END tab-docs -->
+
+
+    <!-- Footer -->
+    <div class="footer">
+      <div>© <span id="y"></span> Ella Stephenson De Castro</div>
+      <div><a href="index.html">Home</a> · <a href="photography.html">Photography</a> · <a href="about.html">About</a></div>
     </div>
 
-    <!-- VIDEO 2 -->
-    <div class="videoCard">
-      <div class="videoEmbed">
-        <iframe
-          src="https://www.youtube.com/embed/jlcqW2JM0hQ"
-          allowfullscreen>
-        </iframe>
-      </div>
+  </div> <!-- END container -->
 
-      <div class="videoMeta">
-        <h3><strong>Holocaust Impact Theatre</strong></h3>
-        <p>
-          Two of ten informational videos examining types of oppression and how
-          communities confront these issues. Featured on Channel 10 News.
-        </p>
-      </div>
-    </div>
 
-  </div>
-
-</div>
   <script>
+    // Footer year
     document.getElementById("y").textContent = new Date().getFullYear();
 
     // Main tabs
@@ -212,17 +210,21 @@
         b.setAttribute("aria-selected","false");
       });
 
-      document.getElementById("tab-" + tabName).classList.add("active");
+      const panel = document.getElementById("tab-" + tabName);
+      if(panel) panel.classList.add("active");
+
       const activeBtn = document.querySelector(`.tabBtn[data-tab="${tabName}"]`);
-      activeBtn.classList.add("active");
-      activeBtn.setAttribute("aria-selected","true");
+      if(activeBtn){
+        activeBtn.classList.add("active");
+        activeBtn.setAttribute("aria-selected","true");
+      }
     }
 
     tabBtns.forEach(btn => {
       btn.addEventListener("click", () => activateTab(btn.dataset.tab));
     });
 
-    // Subtabs (scoped: each tabPanel has its own subtabs)
+    // Subtabs (scoped per tabPanel)
     document.querySelectorAll(".tabPanel").forEach(panel => {
       const subBtns = panel.querySelectorAll(".subtabBtn");
       const subPanels = panel.querySelectorAll(".subPanel");
@@ -230,8 +232,10 @@
       function activateSub(subName){
         subPanels.forEach(p => p.classList.remove("active"));
         subBtns.forEach(b => b.classList.remove("active"));
+
         const target = panel.querySelector("#sub-" + subName);
         if(target) target.classList.add("active");
+
         const active = panel.querySelector(`.subtabBtn[data-subtab="${subName}"]`);
         if(active) active.classList.add("active");
       }
@@ -239,5 +243,6 @@
       subBtns.forEach(b => b.addEventListener("click", () => activateSub(b.dataset.subtab)));
     });
   </script>
+
 </body>
 </html>
