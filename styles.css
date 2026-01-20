@@ -197,3 +197,132 @@ body{
     grid-template-columns:1fr;
   }
 }
+
+/* ================= HOME PAGE ONLY ================= */
+
+.homeHero{
+  display:grid;
+  grid-template-columns: 1.25fr .75fr;
+  gap:26px;
+  align-items:start;
+  padding:44px 0 10px;
+}
+
+.heroBadges{
+  display:flex;
+  flex-wrap:wrap;
+  gap:10px;
+  margin-top:18px;
+}
+
+.badge{
+  font-size:12px;
+  color:rgba(255,255,255,.72);
+  border:1px solid rgba(255,255,255,.12);
+  background:rgba(255,255,255,.03);
+  padding:8px 12px;
+  border-radius:999px;
+}
+
+.portraitCard{
+  border-radius:22px;
+  overflow:hidden;
+  border:1px solid rgba(255,255,255,.12);
+  background:linear-gradient(180deg, rgba(255,255,255,.06), rgba(255,255,255,.02));
+  box-shadow:0 25px 65px rgba(0,0,0,.55);
+}
+
+.portraitCard img{
+  width:100%;
+  height:360px;
+  object-fit:cover;
+  display:block;
+}
+
+.portraitMeta{
+  padding:14px 16px 16px;
+  border-top:1px solid rgba(255,255,255,.08);
+}
+
+.portraitName{
+  font-weight:900;
+  letter-spacing:-.01em;
+}
+
+.portraitRole{
+  margin-top:4px;
+  color:rgba(255,255,255,.65);
+  font-size:13px;
+}
+
+/* featured strip */
+.featuredStrip{
+  margin-top:34px;
+  border:1px solid rgba(255,255,255,.12);
+  background:rgba(255,255,255,.03);
+  border-radius:22px;
+  padding:16px;
+}
+
+.stripTitle{
+  font-weight:900;
+  letter-spacing:.02em;
+  margin:2px 2px 12px;
+  color:rgba(255,255,255,.85);
+}
+
+.stripGrid{
+  display:grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap:12px;
+}
+
+.stripTile{
+  position:relative;
+  border-radius:18px;
+  overflow:hidden;
+  border:1px solid rgba(255,255,255,.10);
+  background:#0b0b10;
+  height:190px;
+  display:block;
+}
+
+.stripTile img{
+  width:100%;
+  height:100%;
+  object-fit:cover;
+  display:block;
+  transform:scale(1.02);
+  transition: transform .25s ease;
+}
+
+.stripTile:hover img{
+  transform:scale(1.06);
+}
+
+.stripOverlay{
+  position:absolute;
+  inset:auto 0 0 0;
+  padding:14px 14px 12px;
+  background:linear-gradient(180deg, transparent, rgba(0,0,0,.72));
+}
+
+.stripLabel{
+  font-size:11px;
+  letter-spacing:.16em;
+  text-transform:uppercase;
+  color:rgba(255,255,255,.70);
+}
+
+.stripText{
+  margin-top:6px;
+  font-weight:900;
+  font-size:16px;
+}
+
+@media(max-width: 980px){
+  .homeHero{ grid-template-columns: 1fr; }
+  .portraitCard img{ height:320px; }
+  .stripGrid{ grid-template-columns: 1fr; }
+  .stripTile{ height:200px; }
+}
