@@ -653,3 +653,11 @@ a{color:inherit}
   .frame img{ height:230px; }
   .carouselTrack{ grid-auto-columns:86%; }
 }
+
+.aboutPhoto img{
+  width:100%;
+  max-height:520px;
+  object-fit:cover;
+  object-position:center;
+  display:block;
+}
