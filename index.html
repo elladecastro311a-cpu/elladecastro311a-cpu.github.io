@@ -9,6 +9,7 @@
 </head>
 
 <body>
+
   <!-- Top Bar -->
   <div class="topbar">
     <div class="container">
@@ -27,15 +28,16 @@
 
   <main class="container">
 
-    <!-- HOME HERO -->
+    <!-- ================= HOME HERO ================= -->
     <section class="homeHero">
       <div class="heroGrid">
+
+        <!-- LEFT: COPY -->
         <div class="heroCopy">
           <p class="kicker">Broadcast • Film • Photography</p>
 
           <h1 class="h1">
-            Live broadcast.
-            <br />
+            Live broadcast.<br />
             Story-first filmmaking.
           </h1>
 
@@ -59,10 +61,10 @@
           </div>
         </div>
 
+        <!-- RIGHT: IMAGE -->
         <div class="heroVisual">
           <div class="heroImage">
-            <!-- IMPORTANT: this must match your real file path -->
-          <img src="hero-on-set.jpg" alt="Ella Stephenson De Castro filming on set">
+            <img src="hero-on-set.jpg">
           </div>
 
           <div class="heroBadge">
@@ -70,11 +72,13 @@
             <div class="heroBadgeSub">Ella Stephenson De Castro</div>
           </div>
         </div>
+
       </div>
     </section>
 
-    <!-- 3 Tiles -->
+    <!-- ================= TILES ================= -->
     <section class="homeTiles">
+
       <a class="tile" href="video.html">
         <p class="tileKicker">Video</p>
         <h2 class="tileTitle">Live Broadcast + Features</h2>
@@ -101,9 +105,10 @@
         </p>
         <div class="tileLink">Open About →</div>
       </a>
+
     </section>
 
-    <!-- Footer -->
+    <!-- ================= FOOTER ================= -->
     <div class="footer">
       <div>© <span id="y"></span> Ella Stephenson De Castro</div>
       <div>
@@ -118,5 +123,6 @@
   <script>
     document.getElementById("y").textContent = new Date().getFullYear();
   </script>
+
 </body>
 </html>
