@@ -3,8 +3,8 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Ella Stephenson De Castro | Creative Work</title>
-  <meta name="description" content="Ella Stephenson De Castro. Broadcast, film, and photography portfolio. Live sports broadcast, documentary, and editorial travel work." />
+  <title>Ella Stephenson De Castro | Portfolio</title>
+  <meta name="description" content="Ella Stephenson De Castro portfolio. Live broadcast camera work, documentary and narrative storytelling, and photography collections." />
   <link rel="stylesheet" href="styles.css" />
 </head>
 
@@ -17,8 +17,9 @@
           <span class="mark"></span>
           Ella Stephenson De Castro
         </div>
+
         <nav class="nav">
-          <a href="index.html">Home</a>
+          <a href="index.html" aria-current="page">Home</a>
           <a href="photography.html">Photography</a>
           <a href="video.html">Video</a>
           <a href="about.html">About</a>
@@ -29,106 +30,100 @@
 
   <main class="container">
 
-    <!-- HERO -->
+    <!-- HERO (clean + portfolio-ready) -->
     <section class="homeHero">
-      <div class="homeHeroLeft">
-        <p class="kicker">Creative Work</p>
+      <div class="heroGrid">
+        <!-- Copy -->
+        <div class="heroCopy">
+          <p class="kicker">Broadcast • Film • Photography</p>
 
-        <h1 class="h1">
-          Broadcast, film, and photography<br />
-          built with an entrepreneur’s mindset.
-        </h1>
+          <h1 class="h1">
+            Live broadcast.
+            <br />
+            Story-first filmmaking.
+          </h1>
 
-        <p class="sub">
-          I create clean, high-impact visuals for live sports and interviews, plus story-driven documentary and editorial photo work.
+          <p class="sub heroSub">
+            Camera work for live games and interviews, plus documentary and visual storytelling.
+            Built with an entrepreneur’s mindset: clear, intentional, and audience-driven.
+          </p>
+
+          <div class="heroCtas">
+            <a class="btn primary" href="video.html">Watch Video Work</a>
+            <a class="btn" href="photography.html">View Photography</a>
+          </div>
+
+          <div class="heroMeta">
+            <span class="chip">Florida State University</span>
+            <span class="chip">Digital Media Production</span>
+            <span class="chip">Commercial Entrepreneurship</span>
+            <span class="chip">Seminole Productions</span>
+            <span class="chip">ACC Network</span>
+            <span class="chip">Camera 1</span>
+          </div>
+        </div>
+
+        <!-- Visual -->
+        <div class="heroVisual">
+          <div class="heroImage">
+            <!-- Uses your headshot you uploaded -->
+            <img src="assets/assets/headshot.jpg" alt="Ella Stephenson De Castro headshot" />
+          </div>
+
+          <div class="heroBadge">
+            <div class="heroBadgeTitle">Portfolio</div>
+            <div class="heroBadgeSub">Ella Stephenson De Castro</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- FEATURE GRID (3 tiles) -->
+    <section class="homeTiles">
+      <a class="tile" href="video.html">
+        <div class="tileTop">
+          <p class="tileKicker">Video</p>
+          <h2 class="tileTitle">Live Broadcast + Features</h2>
+        </div>
+        <p class="tileText">
+          Game coverage, interviews, documentary and informational projects organized by category.
         </p>
+        <div class="tileLink">Open Video →</div>
+      </a>
 
-        <div class="cta">
-          <a class="btn primary" href="video.html">Watch video work</a>
-          <a class="btn" href="photography.html">View photography</a>
+      <a class="tile" href="photography.html">
+        <div class="tileTop">
+          <p class="tileKicker">Photography</p>
+          <h2 class="tileTitle">Travel + Editorial Series</h2>
         </div>
+        <p class="tileText">
+          Curated collections from Morocco, Italy, Portugal, Sanibel, and Tallahassee.
+        </p>
+        <div class="tileLink">Open Photography →</div>
+      </a>
 
-        <div class="heroBadges">
-          <span class="badge">FSU Digital Media Production</span>
-          <span class="badge">Commercial Entrepreneurship</span>
-          <span class="badge">ACC Network</span>
-          <span class="badge">Seminole Productions</span>
+      <a class="tile" href="about.html">
+        <div class="tileTop">
+          <p class="tileKicker">About</p>
+          <h2 class="tileTitle">Who I am + what I do</h2>
         </div>
-      </div>
-
-      <div class="homeHeroRight">
-        <div class="portraitCard">
-          <!-- If this path doesn't show, tell me where headshot.jpg is and I’ll correct it -->
-          <img src="assets/assets/headshot.jpg" alt="Portrait of Ella Stephenson De Castro" />
-          <div class="portraitMeta">
-            <div class="portraitName">Ella Stephenson De Castro</div>
-            <div class="portraitRole">Broadcast + Film + Photo</div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- FEATURED STRIP -->
-    <section class="featuredStrip">
-      <div class="stripTitle">Featured selects</div>
-
-      <div class="stripGrid">
-        <!-- Use images that already exist in your repo -->
-        <a class="stripTile" href="photography.html#morocco">
-          <img src="assets/morocco/morocco-01.jpg" alt="Morocco Sahara photo" />
-          <div class="stripOverlay">
-            <div class="stripLabel">Photography</div>
-            <div class="stripText">Morocco Sahara</div>
-          </div>
-        </a>
-
-        <a class="stripTile" href="photography.html#italy">
-          <img src="assets/assets/italy/italy-mille-03.jpg" alt="Italy Mille Miglia photo" />
-          <div class="stripOverlay">
-            <div class="stripLabel">Photography</div>
-            <div class="stripText">Italy Mille Miglia</div>
-          </div>
-        </a>
-
-        <a class="stripTile" href="photography.html#portugal">
-          <img src="assets/assets/albufeira/albufeira-portugal-01.jpg" alt="Portugal Albufeira photo" />
-          <div class="stripOverlay">
-            <div class="stripLabel">Photography</div>
-            <div class="stripText">Portugal Algarve</div>
-          </div>
-        </a>
-      </div>
-    </section>
-
-    <!-- THREE CARDS -->
-    <section class="cardGrid">
-      <div class="card">
-        <span>Photography</span>
-        <h3>Travel and editorial series</h3>
-        <p>Curated sets from Morocco, Italy, Portugal, and Florida with clean sequencing and atmosphere.</p>
-        <a href="photography.html">Open photography</a>
-      </div>
-
-      <div class="card">
-        <span>Video</span>
-        <h3>Live broadcast and features</h3>
-        <p>Game coverage, interviews, and story-driven work organized by category for fast review.</p>
-        <a href="video.html">Open video</a>
-      </div>
-
-      <div class="card">
-        <span>About</span>
-        <h3>Creative strategy, not just visuals</h3>
-        <p>I approach production like a business: clarity, structure, audience, and results.</p>
-        <a href="about.html">Open about</a>
-      </div>
+        <p class="tileText">
+          Digital media production meets business strategy, built for internships and production teams.
+        </p>
+        <div class="tileLink">Open About →</div>
+      </a>
     </section>
 
     <!-- Footer -->
     <div class="footer">
       <div>© <span id="y"></span> Ella Stephenson De Castro</div>
-      <div><a href="photography.html">Photography</a> · <a href="video.html">Video</a> · <a href="about.html">About</a></div>
+      <div>
+        <a href="photography.html">Photography</a> ·
+        <a href="video.html">Video</a> ·
+        <a href="about.html">About</a>
+      </div>
     </div>
+
   </main>
 
   <script>
