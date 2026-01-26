@@ -654,12 +654,14 @@ a{color:inherit}
   .carouselTrack{ grid-auto-columns:86%; }
 }
 
-.aboutPhoto img{
-  width:100%;
-  max-height:520px;
-  object-fit:cover;
-  object-position:center;
-  display:block;
+.aboutPhoto img {
+  width: 100%;
+  height: auto;                  /* natural height, no forced fill */
+  max-height: 520px;             /* keeps it from getting too huge */
+  object-fit: contain;           /* shows the entire image */
+  object-position: center top;   /* prioritizes the top of the face */
+  display: block;
+}
 }
 /* ===== HERO IMAGE FIX (home page) ===== */
 .heroImage{
