@@ -661,3 +661,29 @@ a{color:inherit}
   object-position:center;
   display:block;
 }
+/* ===== HERO IMAGE FIX (home page) ===== */
+.heroImage{
+  width: 100%;
+  height: 520px;            /* desktop height */
+  border-radius: 22px;
+  overflow: hidden;
+  border: 1px solid rgba(255,255,255,.14);
+  background: rgba(255,255,255,.03);
+}
+
+.heroImage img{
+  width: 100%;
+  height: 100%;
+  display: block;
+  object-fit: cover;         /* fills the frame */
+  object-position: 50% 35%;  /* move focus UP so your face/upper body shows */
+}
+
+/* Responsive */
+@media (max-width: 900px){
+  .heroImage{ height: 440px; }
+}
+
+@media (max-width: 640px){
+  .heroImage{ height: 360px; }
+}
