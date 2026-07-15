@@ -6,6 +6,41 @@
   <title>Video | Ella Stephenson De Castro</title>
   <meta name="description" content="Broadcast camera work, interviews, documentary, and informational storytelling." />
   <link rel="stylesheet" href="styles.css" />
+
+  <!-- Daily Caller section styles -->
+  <style>
+    .dcIntro{ color:var(--muted); max-width:760px; margin:6px 0 22px; }
+    .dcGroup{ margin: 30px 0 38px; }
+    .dcGroupTitle{ font-size:20px; font-weight:700; margin:0; }
+    .dcGroupSub{ color:var(--muted); font-size:13.5px; margin:4px 0 14px; max-width:760px; }
+    .dcGrid{
+      display:grid;
+      grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+      gap:16px;
+    }
+    .dcCard{
+      background: var(--panel); border:1px solid var(--stroke);
+      border-radius: var(--r-lg); padding:18px;
+      display:flex; flex-direction:column; gap:10px;
+      transition: border-color .15s ease, transform .15s ease;
+    }
+    .dcCard:hover{ border-color: var(--accent); transform: translateY(-2px); }
+    .dcCard.featured{ grid-column: 1 / -1; border-color: var(--accent); }
+    .dcKicker{
+      font-size:11px; letter-spacing:.12em; text-transform:uppercase;
+      color: var(--accent); margin:0;
+    }
+    .dcTitle{ font-size:16px; font-weight:700; margin:0; line-height:1.35; }
+    .dcCard.featured .dcTitle{ font-size:19px; }
+    .dcRole{ color: var(--muted); font-size:13.5px; margin:0; flex:1; }
+    .dcLinks{ display:flex; flex-wrap:wrap; gap:8px; }
+    .dcLink{
+      border:1px solid var(--stroke); border-radius:999px;
+      padding:6px 12px; font-size:12.5px; color: var(--text);
+      text-decoration:none; transition: all .15s ease; white-space:nowrap;
+    }
+    .dcLink:hover{ border-color: var(--accent); color: var(--accent); }
+  </style>
 </head>
 
 <body>
@@ -32,7 +67,10 @@
 
     <!-- ===== MAIN TABS ===== -->
     <div class="tabs" role="tablist" aria-label="Video categories">
-      <button class="tabBtn active" role="tab" aria-selected="true" data-tab="sports">
+      <button class="tabBtn active" role="tab" aria-selected="true" data-tab="dc">
+        <span class="tabIcon">🏛️</span> Daily Caller — D.C.
+      </button>
+      <button class="tabBtn" role="tab" aria-selected="false" data-tab="sports">
         <span class="tabIcon">🏟️</span> Sports Broadcast
       </button>
       <button class="tabBtn" role="tab" aria-selected="false" data-tab="docs">
@@ -40,8 +78,518 @@
       </button>
     </div>
 
+    <!-- ===== TAB: DAILY CALLER (default) ===== -->
+    <div class="tabPanel active" id="tab-dc" role="tabpanel">
+
+      <p class="dcIntro">
+        Videography internship at the Daily Caller in Washington, D.C. (Summer 2026) — operating camera on studio
+        interviews and field shoots, editing long-form video, and cutting shorts, reels, and captioned social clips.
+        Work published across the Daily Caller's YouTube, YouTube Shorts, Instagram, and X accounts, reaching a
+        combined audience of over 2 million followers.
+      </p>
+
+      <!-- 1. Eduard Habsburg / Vatican series -->
+      <div class="dcGroup">
+        <h2 class="dcGroupTitle">🎥 The Eduard Habsburg Interview — Camera &amp; Edit</h2>
+        <p class="dcGroupSub">I operated camera on this studio interview with Eduard Habsburg — Hungary's Ambassador to the Holy See, with 154K followers on YouTube — then edited the full 49-minute video and cut a series of shorts from the footage.</p>
+        <div class="dcGrid">
+
+          <div class="dcCard featured">
+            <p class="dcKicker">Full Interview · 49 min · Camera + Edit</p>
+            <p class="dcTitle">The Latin Mass And Pope Leo: Eduard Habsburg On Catholic Identity</p>
+            <p class="dcRole">Operated camera on the studio shoot and edited the complete 49-minute interview.</p>
+            <div class="dcLinks">
+              <a class="dcLink" href="https://youtu.be/oSG-CUB0ouE" target="_blank" rel="noopener">▶ YouTube — Full Interview</a>
+            </div>
+          </div>
+
+          <div class="dcCard">
+            <p class="dcKicker">Short · From My Footage</p>
+            <p class="dcTitle">The Vatican Is Entering The AI Debate In A Big Way</p>
+            <p class="dcRole">Cut and edited this short from the interview I filmed.</p>
+            <div class="dcLinks">
+              <a class="dcLink" href="https://youtu.be/HesomLfyiAg" target="_blank" rel="noopener">YouTube Short</a>
+            </div>
+          </div>
+
+          <div class="dcCard">
+            <p class="dcKicker">Short · From My Footage</p>
+            <p class="dcTitle">Vatican Expert Tells Us That Pope Leo’s AI Encyclical Will Offer A Balanced Moral Voice On AI</p>
+            <p class="dcRole">Cut and edited this short from the interview I filmed.</p>
+            <div class="dcLinks">
+              <a class="dcLink" href="https://youtu.be/pFQ8DcrwgTs" target="_blank" rel="noopener">YouTube Short</a>
+            </div>
+          </div>
+
+          <div class="dcCard">
+            <p class="dcKicker">Short · From My Footage</p>
+            <p class="dcTitle">Hungary Touts Tax Breaks, Cash Aid, And Pro-Family Messaging To Encourage Larger Families</p>
+            <p class="dcRole">Cut and edited this short from the interview I filmed.</p>
+            <div class="dcLinks">
+              <a class="dcLink" href="https://youtu.be/jsv88StziWE" target="_blank" rel="noopener">YouTube Short</a>
+            </div>
+          </div>
+
+          <div class="dcCard">
+            <p class="dcKicker">Short · From My Footage</p>
+            <p class="dcTitle">The Truth Behind The Habsburg Jaw And Royal Marriages</p>
+            <p class="dcRole">Cut and edited this short from the interview I filmed.</p>
+            <div class="dcLinks">
+              <a class="dcLink" href="https://youtu.be/UOxYia_oAHU" target="_blank" rel="noopener">YouTube Short</a>
+            </div>
+          </div>
+
+          <div class="dcCard">
+            <p class="dcKicker">Short · From My Footage</p>
+            <p class="dcTitle">What Most People Don’t Understand About The Vatican</p>
+            <p class="dcRole">Cut and edited this short from the interview I filmed.</p>
+            <div class="dcLinks">
+              <a class="dcLink" href="https://youtu.be/jdygHafYxsA" target="_blank" rel="noopener">YouTube Short</a>
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+      <!-- 2. Rebeka Zeljko -->
+      <div class="dcGroup">
+        <h2 class="dcGroupTitle">🎙️ Rebeka Zeljko — National Correspondent</h2>
+        <p class="dcGroupSub">Filmed, produced, and edited 14 videos for national correspondent Rebeka Zeljko, plus the shorts and social cuts published alongside each one. Listed in chronological order.</p>
+        <div class="dcGrid">
+
+          <div class="dcCard">
+            <p class="dcKicker">Camera + Edit</p>
+            <p class="dcTitle">Chip Roy Interview</p>
+            <p class="dcRole">Filmed, produced, and edited the on-camera interview segment.</p>
+            <div class="dcLinks">
+              <a class="dcLink" href="https://youtu.be/s86vzDXah4g" target="_blank" rel="noopener">▶ YouTube Video</a>
+              <a class="dcLink" href="https://x.com/rebekazeljko/status/2057184828219326835" target="_blank" rel="noopener">𝕏 Post</a>
+            </div>
+          </div>
+
+          <div class="dcCard">
+            <p class="dcKicker">Camera + Edit</p>
+            <p class="dcTitle">Why Trump Endorsements Matter</p>
+            <p class="dcRole">Filmed, produced, and edited the full video and the short.</p>
+            <div class="dcLinks">
+              <a class="dcLink" href="https://youtu.be/rzNOtSVqkmc" target="_blank" rel="noopener">▶ YouTube Video</a>
+              <a class="dcLink" href="https://youtube.com/shorts/MQalVLpzMWY" target="_blank" rel="noopener">YouTube Short</a>
+            </div>
+          </div>
+
+          <div class="dcCard">
+            <p class="dcKicker">Camera + Edit</p>
+            <p class="dcTitle">Rebeka Zeljko Field Report [RENAME ME]</p>
+            <p class="dcRole">Filmed, produced, and edited the full video, short, and both X cuts.</p>
+            <div class="dcLinks">
+              <a class="dcLink" href="https://youtu.be/Hxe-RBRTsBs" target="_blank" rel="noopener">▶ YouTube Video</a>
+              <a class="dcLink" href="https://youtube.com/shorts/mQ6tHC-I79k" target="_blank" rel="noopener">YouTube Short</a>
+              <a class="dcLink" href="https://x.com/rebekazeljko/status/2064358217233121655" target="_blank" rel="noopener">𝕏 Post (Rebeka)</a>
+              <a class="dcLink" href="https://x.com/DailyCaller/status/2064372225084441081" target="_blank" rel="noopener">𝕏 Post (Daily Caller)</a>
+            </div>
+          </div>
+
+          <div class="dcCard">
+            <p class="dcKicker">Camera + Edit</p>
+            <p class="dcTitle">Israel and Trump</p>
+            <p class="dcRole">Filmed, produced, and edited the full video and X cut.</p>
+            <div class="dcLinks">
+              <a class="dcLink" href="https://youtu.be/CR1Vef0GHrk" target="_blank" rel="noopener">▶ YouTube Video</a>
+              <a class="dcLink" href="https://x.com/rebekazeljko/status/2064749825623511218" target="_blank" rel="noopener">𝕏 Post</a>
+            </div>
+          </div>
+
+          <div class="dcCard">
+            <p class="dcKicker">Camera + Edit</p>
+            <p class="dcTitle">Belfast Is Burning</p>
+            <p class="dcRole">Filmed, produced, and edited the full video and the short.</p>
+            <div class="dcLinks">
+              <a class="dcLink" href="https://youtu.be/LRJ0BZarc5k" target="_blank" rel="noopener">▶ YouTube Video</a>
+              <a class="dcLink" href="https://youtube.com/shorts/XYopJAsASf8" target="_blank" rel="noopener">YouTube Short</a>
+            </div>
+          </div>
+
+          <div class="dcCard">
+            <p class="dcKicker">Camera + Edit</p>
+            <p class="dcTitle">Dems Embarrass Themselves Amid Trump's Epic UFC Weekend</p>
+            <p class="dcRole">Filmed, produced, and edited the full video and the short.</p>
+            <div class="dcLinks">
+              <a class="dcLink" href="https://youtu.be/z-xOPa88UnI" target="_blank" rel="noopener">▶ YouTube Video</a>
+              <a class="dcLink" href="https://youtube.com/shorts/ECqrHjgaREM" target="_blank" rel="noopener">YouTube Short</a>
+            </div>
+          </div>
+
+          <div class="dcCard">
+            <p class="dcKicker">Camera + Edit</p>
+            <p class="dcTitle">250K Girls Sacrificed for Diversity</p>
+            <p class="dcRole">Filmed, produced, and edited the full video and its social reels.</p>
+            <div class="dcLinks">
+              <a class="dcLink" href="https://youtu.be/-vCavXNvNuo" target="_blank" rel="noopener">▶ YouTube Video</a>
+            </div>
+          </div>
+
+          <div class="dcCard">
+            <p class="dcKicker">Produce + Edit</p>
+            <p class="dcTitle">BIDEN DEJA VU: Republicans Run the Dems' Health Playbook for Mitch McConnell</p>
+            <p class="dcRole">Produced and edited the full video, short, and reel.</p>
+            <div class="dcLinks">
+              <a class="dcLink" href="https://youtu.be/Lc6tJ7euesQ" target="_blank" rel="noopener">▶ YouTube Video</a>
+              <a class="dcLink" href="https://youtube.com/shorts/mvDgoXK7RAc" target="_blank" rel="noopener">YouTube Short</a>
+              <a class="dcLink" href="https://www.instagram.com/reel/Dax1vzMpK8A/" target="_blank" rel="noopener">Instagram Reel</a>
+            </div>
+          </div>
+
+          <div class="dcCard">
+            <p class="dcKicker">Produce + Edit</p>
+            <p class="dcTitle">Apparently Air Conditioning is American Propaganda...?</p>
+            <p class="dcRole">Produced and edited the full video, short, and reel.</p>
+            <div class="dcLinks">
+              <a class="dcLink" href="https://youtu.be/EZj5v9s_K7A" target="_blank" rel="noopener">▶ YouTube Video</a>
+              <a class="dcLink" href="https://youtube.com/shorts/0NnB-PQZ7so" target="_blank" rel="noopener">YouTube Short</a>
+              <a class="dcLink" href="https://www.instagram.com/reel/DaQhRQpJ3q6/" target="_blank" rel="noopener">Instagram Reel</a>
+            </div>
+          </div>
+
+          <div class="dcCard">
+            <p class="dcKicker">Produce + Edit</p>
+            <p class="dcTitle">Here's Proof That Republicans Are Painfully Out Of Touch</p>
+            <p class="dcRole">Produced and edited the full video, short, and reel.</p>
+            <div class="dcLinks">
+              <a class="dcLink" href="https://youtu.be/_X-9YbH72PE" target="_blank" rel="noopener">▶ YouTube Video</a>
+              <a class="dcLink" href="https://youtube.com/shorts/zxDEYiNvBn0" target="_blank" rel="noopener">YouTube Short</a>
+              <a class="dcLink" href="https://www.instagram.com/reel/Da0aUNxJ6xT/" target="_blank" rel="noopener">Instagram Reel</a>
+            </div>
+          </div>
+
+          <div class="dcCard">
+            <p class="dcKicker">Produce + Edit</p>
+            <p class="dcTitle">It's Not Racist To Want The "Temporary" Haitians Gone</p>
+            <p class="dcRole">Produced and edited the full video and the short.</p>
+            <div class="dcLinks">
+              <a class="dcLink" href="https://youtu.be/muq5eYI01JY" target="_blank" rel="noopener">▶ YouTube Video</a>
+              <a class="dcLink" href="https://youtube.com/shorts/4prvmvtTpYE" target="_blank" rel="noopener">YouTube Short</a>
+            </div>
+          </div>
+
+          <div class="dcCard">
+            <p class="dcKicker">Produce + Edit</p>
+            <p class="dcTitle">Birthright Citizenship is Inherently Anti-American</p>
+            <p class="dcRole">Produced and edited the short and reel.</p>
+            <div class="dcLinks">
+              <a class="dcLink" href="https://youtube.com/shorts/scY41f4P7xU" target="_blank" rel="noopener">YouTube Short</a>
+              <a class="dcLink" href="https://www.instagram.com/reel/DaS-RBFJDEt/" target="_blank" rel="noopener">Instagram Reel</a>
+            </div>
+          </div>
+
+          <div class="dcCard">
+            <p class="dcKicker">Produce + Edit</p>
+            <p class="dcTitle">The Most Annoying People You Know Are Mad at the Peace Deal</p>
+            <p class="dcRole">Produced and edited the full video.</p>
+            <div class="dcLinks">
+              <a class="dcLink" href="https://youtu.be/FOguNpF0kLg" target="_blank" rel="noopener">▶ YouTube Video</a>
+            </div>
+          </div>
+
+          <div class="dcCard">
+            <p class="dcKicker">Produce + Edit</p>
+            <p class="dcTitle">America's Bad PR Just Got Destroyed by Soccer Fans</p>
+            <p class="dcRole">Produced and edited the full video.</p>
+            <div class="dcLinks">
+              <a class="dcLink" href="https://youtu.be/E9YUFh2JOHg" target="_blank" rel="noopener">▶ YouTube Video</a>
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+      <!-- 3. Ashley Brasfield -->
+      <div class="dcGroup">
+        <h2 class="dcGroupTitle">🎙️ Ashley Brasfield — Correspondent</h2>
+        <p class="dcGroupSub">Filmed, produced, and edited videos, shorts, and X cuts for correspondent Ashley Brasfield.</p>
+        <div class="dcGrid">
+
+          <div class="dcCard">
+            <p class="dcKicker">Camera + Produce</p>
+            <p class="dcTitle">Author Sues Coffee Chain for Discrimination After Book Was Axed</p>
+            <p class="dcRole">Filmed and produced the two-person sit-down interview.</p>
+            <div class="dcLinks">
+              <a class="dcLink" href="https://youtu.be/X2wDwzqJHU8" target="_blank" rel="noopener">▶ YouTube Video</a>
+              <a class="dcLink" href="https://x.com/DailyCaller/status/2066579433058599122" target="_blank" rel="noopener">𝕏 Post</a>
+            </div>
+          </div>
+
+          <div class="dcCard">
+            <p class="dcKicker">Produce + Edit</p>
+            <p class="dcTitle">Instagram Models</p>
+            <p class="dcRole">Produced and edited the full video, short, and X cut.</p>
+            <div class="dcLinks">
+              <a class="dcLink" href="https://youtu.be/_2O9yAPjVZk" target="_blank" rel="noopener">▶ YouTube Video</a>
+              <a class="dcLink" href="https://youtube.com/shorts/FW5wQZY6M6M" target="_blank" rel="noopener">YouTube Short</a>
+              <a class="dcLink" href="https://x.com/BrasfieldAshley/status/2062953174127042871" target="_blank" rel="noopener">𝕏 Post</a>
+            </div>
+          </div>
+
+          <div class="dcCard">
+            <p class="dcKicker">Produce + Edit</p>
+            <p class="dcTitle">Stabbing in Atlanta Metro</p>
+            <p class="dcRole">Produced and edited the full video and X cut.</p>
+            <div class="dcLinks">
+              <a class="dcLink" href="https://youtu.be/He5ijywS7mE" target="_blank" rel="noopener">▶ YouTube Video</a>
+              <a class="dcLink" href="https://x.com/BrasfieldAshley/status/2062199441969631601" target="_blank" rel="noopener">𝕏 Post</a>
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+      <!-- 4. Reagan Reese -->
+      <div class="dcGroup">
+        <h2 class="dcGroupTitle">🎙️ Reagan Reese — White House Correspondent</h2>
+        <p class="dcGroupSub">Edited, clipped, and captioned social reels for White House correspondent Reagan Reese, published on Instagram and X.</p>
+        <div class="dcGrid">
+
+          <div class="dcCard">
+            <p class="dcKicker">Edit + Captions</p>
+            <p class="dcTitle">How Extensive Has Trump’s D.C. Beautification Been? We Have the Numbers</p>
+            <p class="dcRole">Edited and captioned the reel.</p>
+            <div class="dcLinks">
+              <a class="dcLink" href="https://www.instagram.com/reel/DZKxkWtgMML/" target="_blank" rel="noopener">Instagram Reel</a>
+            </div>
+          </div>
+
+          <div class="dcCard">
+            <p class="dcKicker">Edit + Captions</p>
+            <p class="dcTitle">The DOJ Is Deploying Election Monitors to Key Jurisdictions</p>
+            <p class="dcRole">Edited the clips and added captions.</p>
+            <div class="dcLinks">
+              <a class="dcLink" href="https://www.instagram.com/reel/Danv4RgJYLI/" target="_blank" rel="noopener">Instagram Reel</a>
+              <a class="dcLink" href="https://x.com/reaganreese_/status/2075637534298702108" target="_blank" rel="noopener">𝕏 Post</a>
+            </div>
+          </div>
+
+          <div class="dcCard">
+            <p class="dcKicker">Edit + Captions</p>
+            <p class="dcTitle">Authorities Have Caught an Illegal Alien Voting in a Federal Election</p>
+            <p class="dcRole">Edited and captioned the reel.</p>
+            <div class="dcLinks">
+              <a class="dcLink" href="https://www.instagram.com/reel/DadzVzqpciM/" target="_blank" rel="noopener">Instagram Reel</a>
+              <a class="dcLink" href="https://x.com/reaganreese_/status/2074235592892678499" target="_blank" rel="noopener">𝕏 Post</a>
+            </div>
+          </div>
+
+          <div class="dcCard">
+            <p class="dcKicker">Edit</p>
+            <p class="dcTitle">Riding the Freedom Train — Happy Birthday, America</p>
+            <p class="dcRole">Clipped the footage together for the reel.</p>
+            <div class="dcLinks">
+              <a class="dcLink" href="https://www.instagram.com/reel/DaTVOKLJfEu/" target="_blank" rel="noopener">Instagram Reel</a>
+            </div>
+          </div>
+
+          <div class="dcCard">
+            <p class="dcKicker">Edit + Captions</p>
+            <p class="dcTitle">Review of JD Vance’s New Book</p>
+            <p class="dcRole">Clipped and captioned the reel.</p>
+            <div class="dcLinks">
+              <a class="dcLink" href="https://www.instagram.com/reel/DZ5V6a_xbWH/" target="_blank" rel="noopener">Instagram Reel</a>
+              <a class="dcLink" href="https://x.com/reaganreese_/status/2069104544647155835" target="_blank" rel="noopener">𝕏 Post</a>
+            </div>
+          </div>
+
+          <div class="dcCard">
+            <p class="dcKicker">Edit + Captions</p>
+            <p class="dcTitle">AI Hits Political Ads — the Texas Senate Race</p>
+            <p class="dcRole">Edited, clipped, and captioned the reel.</p>
+            <div class="dcLinks">
+              <a class="dcLink" href="https://www.instagram.com/reel/DZgAuUrpbJq/" target="_blank" rel="noopener">Instagram Reel</a>
+              <a class="dcLink" href="https://x.com/reaganreese_/status/2065539942671888651" target="_blank" rel="noopener">𝕏 Post</a>
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+      <!-- 5. El Salvador / CECOT documentary clips -->
+      <div class="dcGroup">
+        <h2 class="dcGroupTitle">🔒 El Salvador: Inside CECOT — Documentary Clips</h2>
+        <p class="dcGroupSub">Clipped a Daily Caller documentary into horizontal and vertical social cuts with captions, published as YouTube videos, Shorts, Instagram reels, and X posts.</p>
+        <div class="dcGrid">
+
+          <div class="dcCard">
+            <p class="dcKicker">Edit + Captions</p>
+            <p class="dcTitle">INSIDE CECOT: MS-13 Member Admitted to Killing Over THIRTY People</p>
+            <p class="dcRole">Clipped horizontal and vertical versions and added captions.</p>
+            <div class="dcLinks">
+              <a class="dcLink" href="https://youtu.be/JGeuBGVqDww" target="_blank" rel="noopener">▶ YouTube Video</a>
+              <a class="dcLink" href="https://youtube.com/shorts/9N5hnXgUKfs" target="_blank" rel="noopener">YouTube Short</a>
+              <a class="dcLink" href="https://www.instagram.com/reel/Dap74AsD_Tk/" target="_blank" rel="noopener">Instagram Reel</a>
+              <a class="dcLink" href="https://x.com/DailyCaller/status/2075944103142211929" target="_blank" rel="noopener">𝕏 Post</a>
+            </div>
+          </div>
+
+          <div class="dcCard">
+            <p class="dcKicker">Edit + Captions</p>
+            <p class="dcTitle">Rival Gang Members are Forced to Coexist FOREVER in El Salvador’s CECOT</p>
+            <p class="dcRole">Clipped horizontal and vertical versions and added captions.</p>
+            <div class="dcLinks">
+              <a class="dcLink" href="https://youtu.be/PcqZZBAiZ44" target="_blank" rel="noopener">▶ YouTube Video</a>
+              <a class="dcLink" href="https://youtube.com/shorts/uvtmtW8vAq8" target="_blank" rel="noopener">YouTube Short</a>
+              <a class="dcLink" href="https://www.instagram.com/reel/DavFes9lAbj/" target="_blank" rel="noopener">Instagram Reel</a>
+              <a class="dcLink" href="https://x.com/DailyCaller/status/2076668837693661621" target="_blank" rel="noopener">𝕏 Post</a>
+            </div>
+          </div>
+
+          <div class="dcCard">
+            <p class="dcKicker">Edit + Captions</p>
+            <p class="dcTitle">Before CECOT: When El Salvador Became The Murder Capital Of The World</p>
+            <p class="dcRole">Clipped horizontal and vertical versions and added captions.</p>
+            <div class="dcLinks">
+              <a class="dcLink" href="https://youtu.be/6sHFE_DNnWg" target="_blank" rel="noopener">▶ YouTube Video</a>
+              <a class="dcLink" href="https://youtube.com/shorts/zD1gRGe7fE4" target="_blank" rel="noopener">YouTube Short</a>
+              <a class="dcLink" href="https://www.instagram.com/reel/DanoLefk0cs/" target="_blank" rel="noopener">Instagram Reel</a>
+              <a class="dcLink" href="https://x.com/DailyCaller/status/2075619378524283088" target="_blank" rel="noopener">𝕏 Post</a>
+            </div>
+          </div>
+
+          <div class="dcCard">
+            <p class="dcKicker">Edit + Captions</p>
+            <p class="dcTitle">WATCH: EIGHTY INMATES Per Cell in El Salvador’s Mega-Prison</p>
+            <p class="dcRole">Clipped horizontal and vertical versions and added captions.</p>
+            <div class="dcLinks">
+              <a class="dcLink" href="https://youtu.be/0gK2d8al_sE" target="_blank" rel="noopener">▶ YouTube Video</a>
+              <a class="dcLink" href="https://youtube.com/shorts/Su6XTiOmUIk" target="_blank" rel="noopener">YouTube Short</a>
+              <a class="dcLink" href="https://www.instagram.com/reel/DasgnI_EWo6/" target="_blank" rel="noopener">Instagram Reel</a>
+              <a class="dcLink" href="https://x.com/DailyCaller/status/2076306441972109757" target="_blank" rel="noopener">𝕏 Post</a>
+            </div>
+          </div>
+
+          <div class="dcCard">
+            <p class="dcKicker">Edit + Captions</p>
+            <p class="dcTitle">El Salvador Built a Fortress To Single-Handedly END Years of Gang Rule</p>
+            <p class="dcRole">Clipped horizontal and vertical versions and added captions.</p>
+            <div class="dcLinks">
+              <a class="dcLink" href="https://youtu.be/PcqZZBAiZ44?si=SjV1KZYncN9EHvV5" target="_blank" rel="noopener">▶ YouTube Video</a>
+              <a class="dcLink" href="https://youtube.com/shorts/e5i278y8Vik" target="_blank" rel="noopener">YouTube Short</a>
+              <a class="dcLink" href="https://x.com/DailyCaller/status/2077031277388316679" target="_blank" rel="noopener">𝕏 Post</a>
+            </div>
+          </div>
+
+          <div class="dcCard">
+            <p class="dcKicker">Edit + Captions</p>
+            <p class="dcTitle">Filling Up CECOT: El Salvador's Massive Crackdown</p>
+            <p class="dcRole">Clipped horizontal and vertical versions and added captions.</p>
+            <div class="dcLinks">
+              <a class="dcLink" href="https://youtube.com/shorts/jlpLSxBBX50" target="_blank" rel="noopener">YouTube Short</a>
+              <a class="dcLink" href="https://x.com/DailyCaller/status/2077393536232952161" target="_blank" rel="noopener">𝕏 Post</a>
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+      <!-- 6a. Puppet series -->
+      <div class="dcGroup">
+        <h2 class="dcGroupTitle">🎭 Triggered Senior Citizens ATTACK Puppet at Protest</h2>
+        <p class="dcGroupSub">A field series edited from protest footage — multiple cuts published as YouTube Shorts and Instagram Reels.</p>
+        <div class="dcGrid">
+
+          <div class="dcCard">
+            <p class="dcKicker">Edit · Field Footage</p>
+            <p class="dcTitle">Puppet at Protest — Cut 1</p>
+            <p class="dcRole">Edited this cut from field footage.</p>
+            <div class="dcLinks">
+              <a class="dcLink" href="https://youtube.com/shorts/y_V0uhmzj2g" target="_blank" rel="noopener">YouTube Short</a>
+            </div>
+          </div>
+
+          <div class="dcCard">
+            <p class="dcKicker">Edit · Field Footage</p>
+            <p class="dcTitle">Puppet at Protest — Cut 2</p>
+            <p class="dcRole">Edited this cut from field footage.</p>
+            <div class="dcLinks">
+              <a class="dcLink" href="https://youtube.com/shorts/S4OJfQaRslA" target="_blank" rel="noopener">YouTube Short</a>
+            </div>
+          </div>
+
+          <div class="dcCard">
+            <p class="dcKicker">Edit · Field Footage</p>
+            <p class="dcTitle">Puppet at Protest — Cut 3</p>
+            <p class="dcRole">Edited this cut from field footage.</p>
+            <div class="dcLinks">
+              <a class="dcLink" href="https://www.instagram.com/reel/DYkrq5vDvEH/" target="_blank" rel="noopener">Instagram Reel</a>
+            </div>
+          </div>
+
+          <div class="dcCard">
+            <p class="dcKicker">Edit · Field Footage</p>
+            <p class="dcTitle">Puppet at Protest — Cut 4</p>
+            <p class="dcRole">Edited this cut from field footage.</p>
+            <div class="dcLinks">
+              <a class="dcLink" href="https://www.instagram.com/reel/DYnOg_OFQ73/" target="_blank" rel="noopener">Instagram Reel</a>
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+      <!-- 6b. Field videos -->
+      <div class="dcGroup">
+        <h2 class="dcGroupTitle">🎥 Field Videos</h2>
+        <p class="dcGroupSub">On-location field filming around D.C.</p>
+        <div class="dcGrid">
+
+          <div class="dcCard">
+            <p class="dcKicker">Camera · Field</p>
+            <p class="dcTitle">Asking Liberal Bruce Springsteen Fans Offensive Questions</p>
+            <p class="dcRole">Filmed the man-on-the-street segment on location.</p>
+            <div class="dcLinks">
+              <a class="dcLink" href="https://youtu.be/iaWqDvbh5hk" target="_blank" rel="noopener">▶ YouTube Video</a>
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+      <!-- 7. Directed & produced features -->
+      <div class="dcGroup">
+        <h2 class="dcGroupTitle">⭐ Features I Directed &amp; Produced</h2>
+        <p class="dcGroupSub">Projects I directed, produced, and edited at Florida State University.</p>
+        <div class="dcGrid">
+
+          <div class="dcCard">
+            <p class="dcKicker">Directed · Produced · Edited</p>
+            <p class="dcTitle">Advance Feature: All-Night Yahtzee — FSU A Cappella</p>
+            <p class="dcRole">Directed, produced, and edited this short advance feature on Florida State's premier a cappella group.</p>
+            <div class="dcLinks">
+              <a class="dcLink" href="https://youtu.be/OTm5nPMg01I" target="_blank" rel="noopener">▶ YouTube Video</a>
+            </div>
+          </div>
+
+          <div class="dcCard">
+            <p class="dcKicker">Directed · Produced · Edited</p>
+            <p class="dcTitle">Clutch Magazine — FSU Student-Led Fashion Feature</p>
+            <p class="dcRole">Directed, produced, and edited this short feature for FSU's student-led fashion magazine.</p>
+            <div class="dcLinks">
+              <a class="dcLink" href="https://youtu.be/xHxVRwR40rI" target="_blank" rel="noopener">▶ YouTube Video</a>
+            </div>
+          </div>
+
+          <div class="dcCard">
+            <p class="dcKicker">Directed</p>
+            <p class="dcTitle">Documentary — Dog Euthanization</p>
+            <p class="dcRole">Directed this documentary exploring euthanization in animal shelters and the ethical debates behind it.</p>
+            <div class="dcLinks">
+              <a class="dcLink" href="https://youtu.be/HZwK5_i530s" target="_blank" rel="noopener">▶ YouTube Video</a>
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+    </div>
+
     <!-- ===== TAB: SPORTS ===== -->
-    <div class="tabPanel active" id="tab-sports" role="tabpanel">
+    <div class="tabPanel" id="tab-sports" role="tabpanel">
 
       <!-- Subtabs -->
       <div class="subtabs" role="tablist" aria-label="Sports subcategories">
@@ -170,10 +718,7 @@
             </div>
           </div>
 
-        </div>
-      </div>
-    </div>
-<div class="videoCard">
+          <div class="videoCard">
             <div class="videoEmbed">
               <iframe src="https://www.youtube.com/embed/nOU9Zh6RseU" allowfullscreen></iframe>
             </div>
@@ -182,7 +727,8 @@
               <p>Camera 1 (main interview cam). Featuring Head Coach Link Jarrett and Voice of FSU Baseball Eric Luallen.</p>
             </div>
           </div>
-    <div class="videoCard">
+
+          <div class="videoCard">
             <div class="videoEmbed">
               <iframe src="https://www.youtube.com/embed/JYVy8DGm4Fw" allowfullscreen></iframe>
             </div>
@@ -191,6 +737,11 @@
               <p>Camera 1 (main interview cam). Featuring Head Coaches Lonni Alameda, Sara Tisdale, and Brooke Niles, hosted by Jack Kavovit.</p>
             </div>
           </div>
+
+        </div>
+      </div>
+    </div>
+
     <!-- ===== TAB: DOCS ===== -->
     <div class="tabPanel" id="tab-docs" role="tabpanel">
 
@@ -211,7 +762,7 @@
             <div class="videoMeta">
               <h3><strong>Documentary — Dog Euthanization</strong></h3>
               <p>Documentary I directed exploring euthanization in animal shelters and the ethical debates behind it.</p>
-      </div>
+            </div>
           </div>
 
           <div class="videoCard">
