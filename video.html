@@ -26,6 +26,8 @@
     }
     .dcCard:hover{ border-color: var(--accent); transform: translateY(-2px); }
     .dcCard.featured{ grid-column: 1 / -1; border-color: var(--accent); }
+    .dcThumb{ display:block; border-radius:10px; overflow:hidden; border:1px solid var(--stroke); }
+    .dcThumb img{ display:block; width:100%; height:120px; object-fit:cover; }
     .dcKicker{
       font-size:11px; letter-spacing:.12em; text-transform:uppercase;
       color: var(--accent); margin:0;
@@ -73,8 +75,11 @@
       <button class="tabBtn" role="tab" aria-selected="false" data-tab="sports">
         <span class="tabIcon">🏟️</span> Sports Broadcast
       </button>
-      <button class="tabBtn" role="tab" aria-selected="false" data-tab="docs">
-        <span class="tabIcon">🎬</span> Documentary + Informational
+      <button class="tabBtn" role="tab" aria-selected="false" data-tab="features">
+        <span class="tabIcon">⭐</span> Directed &amp; Produced
+      </button>
+      <button class="tabBtn" role="tab" aria-selected="false" data-tab="info">
+        <span class="tabIcon">🧠</span> Informational
       </button>
     </div>
 
@@ -95,6 +100,7 @@
         <div class="dcGrid">
 
           <div class="dcCard featured">
+            <a class="dcThumb" href="https://youtu.be/oSG-CUB0ouE" target="_blank" rel="noopener"><img src="https://img.youtube.com/vi/oSG-CUB0ouE/mqdefault.jpg" alt="" loading="lazy"></a>
             <p class="dcKicker">Full Interview · 49 min · Camera + Edit</p>
             <p class="dcTitle">The Latin Mass And Pope Leo: Eduard Habsburg On Catholic Identity</p>
             <p class="dcRole">Operated camera on the studio shoot and edited the complete 49-minute interview.</p>
@@ -104,6 +110,7 @@
           </div>
 
           <div class="dcCard">
+            <a class="dcThumb" href="https://youtu.be/HesomLfyiAg" target="_blank" rel="noopener"><img src="https://img.youtube.com/vi/HesomLfyiAg/mqdefault.jpg" alt="" loading="lazy"></a>
             <p class="dcKicker">Short · From My Footage</p>
             <p class="dcTitle">The Vatican Is Entering The AI Debate In A Big Way</p>
             <p class="dcRole">Cut and edited this short from the interview I filmed.</p>
@@ -113,6 +120,7 @@
           </div>
 
           <div class="dcCard">
+            <a class="dcThumb" href="https://youtu.be/pFQ8DcrwgTs" target="_blank" rel="noopener"><img src="https://img.youtube.com/vi/pFQ8DcrwgTs/mqdefault.jpg" alt="" loading="lazy"></a>
             <p class="dcKicker">Short · From My Footage</p>
             <p class="dcTitle">Vatican Expert Tells Us That Pope Leo’s AI Encyclical Will Offer A Balanced Moral Voice On AI</p>
             <p class="dcRole">Cut and edited this short from the interview I filmed.</p>
@@ -122,6 +130,7 @@
           </div>
 
           <div class="dcCard">
+            <a class="dcThumb" href="https://youtu.be/jsv88StziWE" target="_blank" rel="noopener"><img src="https://img.youtube.com/vi/jsv88StziWE/mqdefault.jpg" alt="" loading="lazy"></a>
             <p class="dcKicker">Short · From My Footage</p>
             <p class="dcTitle">Hungary Touts Tax Breaks, Cash Aid, And Pro-Family Messaging To Encourage Larger Families</p>
             <p class="dcRole">Cut and edited this short from the interview I filmed.</p>
@@ -131,6 +140,7 @@
           </div>
 
           <div class="dcCard">
+            <a class="dcThumb" href="https://youtu.be/UOxYia_oAHU" target="_blank" rel="noopener"><img src="https://img.youtube.com/vi/UOxYia_oAHU/mqdefault.jpg" alt="" loading="lazy"></a>
             <p class="dcKicker">Short · From My Footage</p>
             <p class="dcTitle">The Truth Behind The Habsburg Jaw And Royal Marriages</p>
             <p class="dcRole">Cut and edited this short from the interview I filmed.</p>
@@ -140,11 +150,22 @@
           </div>
 
           <div class="dcCard">
+            <a class="dcThumb" href="https://youtu.be/jdygHafYxsA" target="_blank" rel="noopener"><img src="https://img.youtube.com/vi/jdygHafYxsA/mqdefault.jpg" alt="" loading="lazy"></a>
             <p class="dcKicker">Short · From My Footage</p>
             <p class="dcTitle">What Most People Don’t Understand About The Vatican</p>
             <p class="dcRole">Cut and edited this short from the interview I filmed.</p>
             <div class="dcLinks">
               <a class="dcLink" href="https://youtu.be/jdygHafYxsA" target="_blank" rel="noopener">YouTube Short</a>
+            </div>
+          </div>
+
+          <div class="dcCard">
+            <a class="dcThumb" href="https://youtu.be/iaWqDvbh5hk" target="_blank" rel="noopener"><img src="https://img.youtube.com/vi/iaWqDvbh5hk/mqdefault.jpg" alt="" loading="lazy"></a>
+            <p class="dcKicker">Camera · Field</p>
+            <p class="dcTitle">Asking Liberal Bruce Springsteen Fans Offensive Questions</p>
+            <p class="dcRole">Filmed the man-on-the-street segment on location.</p>
+            <div class="dcLinks">
+              <a class="dcLink" href="https://youtu.be/iaWqDvbh5hk" target="_blank" rel="noopener">▶ YouTube Video</a>
             </div>
           </div>
 
@@ -158,7 +179,8 @@
         <div class="dcGrid">
 
           <div class="dcCard">
-            <p class="dcKicker">Camera + Edit</p>
+            <a class="dcThumb" href="https://youtu.be/s86vzDXah4g" target="_blank" rel="noopener"><img src="https://img.youtube.com/vi/s86vzDXah4g/mqdefault.jpg" alt="" loading="lazy"></a>
+            <p class="dcKicker">Camera · Produce · Edit</p>
             <p class="dcTitle">Chip Roy Interview</p>
             <p class="dcRole">Filmed, produced, and edited the on-camera interview segment.</p>
             <div class="dcLinks">
@@ -168,7 +190,8 @@
           </div>
 
           <div class="dcCard">
-            <p class="dcKicker">Camera + Edit</p>
+            <a class="dcThumb" href="https://youtu.be/rzNOtSVqkmc" target="_blank" rel="noopener"><img src="https://img.youtube.com/vi/rzNOtSVqkmc/mqdefault.jpg" alt="" loading="lazy"></a>
+            <p class="dcKicker">Camera · Produce · Edit</p>
             <p class="dcTitle">Why Trump Endorsements Matter</p>
             <p class="dcRole">Filmed, produced, and edited the full video and the short.</p>
             <div class="dcLinks">
@@ -178,7 +201,8 @@
           </div>
 
           <div class="dcCard">
-            <p class="dcKicker">Camera + Edit</p>
+            <a class="dcThumb" href="https://youtu.be/Hxe-RBRTsBs" target="_blank" rel="noopener"><img src="https://img.youtube.com/vi/Hxe-RBRTsBs/mqdefault.jpg" alt="" loading="lazy"></a>
+            <p class="dcKicker">Camera · Produce · Edit</p>
             <p class="dcTitle">Rebeka Zeljko Field Report [RENAME ME]</p>
             <p class="dcRole">Filmed, produced, and edited the full video, short, and both X cuts.</p>
             <div class="dcLinks">
@@ -190,7 +214,8 @@
           </div>
 
           <div class="dcCard">
-            <p class="dcKicker">Camera + Edit</p>
+            <a class="dcThumb" href="https://youtu.be/CR1Vef0GHrk" target="_blank" rel="noopener"><img src="https://img.youtube.com/vi/CR1Vef0GHrk/mqdefault.jpg" alt="" loading="lazy"></a>
+            <p class="dcKicker">Camera · Produce · Edit</p>
             <p class="dcTitle">Israel and Trump</p>
             <p class="dcRole">Filmed, produced, and edited the full video and X cut.</p>
             <div class="dcLinks">
@@ -200,7 +225,8 @@
           </div>
 
           <div class="dcCard">
-            <p class="dcKicker">Camera + Edit</p>
+            <a class="dcThumb" href="https://youtu.be/LRJ0BZarc5k" target="_blank" rel="noopener"><img src="https://img.youtube.com/vi/LRJ0BZarc5k/mqdefault.jpg" alt="" loading="lazy"></a>
+            <p class="dcKicker">Camera · Produce · Edit</p>
             <p class="dcTitle">Belfast Is Burning</p>
             <p class="dcRole">Filmed, produced, and edited the full video and the short.</p>
             <div class="dcLinks">
@@ -210,7 +236,8 @@
           </div>
 
           <div class="dcCard">
-            <p class="dcKicker">Camera + Edit</p>
+            <a class="dcThumb" href="https://youtu.be/z-xOPa88UnI" target="_blank" rel="noopener"><img src="https://img.youtube.com/vi/z-xOPa88UnI/mqdefault.jpg" alt="" loading="lazy"></a>
+            <p class="dcKicker">Camera · Produce · Edit</p>
             <p class="dcTitle">Dems Embarrass Themselves Amid Trump's Epic UFC Weekend</p>
             <p class="dcRole">Filmed, produced, and edited the full video and the short.</p>
             <div class="dcLinks">
@@ -220,7 +247,8 @@
           </div>
 
           <div class="dcCard">
-            <p class="dcKicker">Camera + Edit</p>
+            <a class="dcThumb" href="https://youtu.be/-vCavXNvNuo" target="_blank" rel="noopener"><img src="https://img.youtube.com/vi/-vCavXNvNuo/mqdefault.jpg" alt="" loading="lazy"></a>
+            <p class="dcKicker">Camera · Produce · Edit</p>
             <p class="dcTitle">250K Girls Sacrificed for Diversity</p>
             <p class="dcRole">Filmed, produced, and edited the full video and its social reels.</p>
             <div class="dcLinks">
@@ -229,9 +257,10 @@
           </div>
 
           <div class="dcCard">
-            <p class="dcKicker">Produce + Edit</p>
+            <a class="dcThumb" href="https://youtu.be/Lc6tJ7euesQ" target="_blank" rel="noopener"><img src="https://img.youtube.com/vi/Lc6tJ7euesQ/mqdefault.jpg" alt="" loading="lazy"></a>
+            <p class="dcKicker">Camera · Produce · Edit</p>
             <p class="dcTitle">BIDEN DEJA VU: Republicans Run the Dems' Health Playbook for Mitch McConnell</p>
-            <p class="dcRole">Produced and edited the full video, short, and reel.</p>
+            <p class="dcRole">Filmed, produced, and edited the full video, short, and reel.</p>
             <div class="dcLinks">
               <a class="dcLink" href="https://youtu.be/Lc6tJ7euesQ" target="_blank" rel="noopener">▶ YouTube Video</a>
               <a class="dcLink" href="https://youtube.com/shorts/mvDgoXK7RAc" target="_blank" rel="noopener">YouTube Short</a>
@@ -240,9 +269,10 @@
           </div>
 
           <div class="dcCard">
-            <p class="dcKicker">Produce + Edit</p>
+            <a class="dcThumb" href="https://youtu.be/EZj5v9s_K7A" target="_blank" rel="noopener"><img src="https://img.youtube.com/vi/EZj5v9s_K7A/mqdefault.jpg" alt="" loading="lazy"></a>
+            <p class="dcKicker">Camera · Produce · Edit</p>
             <p class="dcTitle">Apparently Air Conditioning is American Propaganda...?</p>
-            <p class="dcRole">Produced and edited the full video, short, and reel.</p>
+            <p class="dcRole">Filmed, produced, and edited the full video, short, and reel.</p>
             <div class="dcLinks">
               <a class="dcLink" href="https://youtu.be/EZj5v9s_K7A" target="_blank" rel="noopener">▶ YouTube Video</a>
               <a class="dcLink" href="https://youtube.com/shorts/0NnB-PQZ7so" target="_blank" rel="noopener">YouTube Short</a>
@@ -251,9 +281,10 @@
           </div>
 
           <div class="dcCard">
-            <p class="dcKicker">Produce + Edit</p>
+            <a class="dcThumb" href="https://youtu.be/_X-9YbH72PE" target="_blank" rel="noopener"><img src="https://img.youtube.com/vi/_X-9YbH72PE/mqdefault.jpg" alt="" loading="lazy"></a>
+            <p class="dcKicker">Camera · Produce · Edit</p>
             <p class="dcTitle">Here's Proof That Republicans Are Painfully Out Of Touch</p>
-            <p class="dcRole">Produced and edited the full video, short, and reel.</p>
+            <p class="dcRole">Filmed, produced, and edited the full video, short, and reel.</p>
             <div class="dcLinks">
               <a class="dcLink" href="https://youtu.be/_X-9YbH72PE" target="_blank" rel="noopener">▶ YouTube Video</a>
               <a class="dcLink" href="https://youtube.com/shorts/zxDEYiNvBn0" target="_blank" rel="noopener">YouTube Short</a>
@@ -262,9 +293,10 @@
           </div>
 
           <div class="dcCard">
-            <p class="dcKicker">Produce + Edit</p>
+            <a class="dcThumb" href="https://youtu.be/muq5eYI01JY" target="_blank" rel="noopener"><img src="https://img.youtube.com/vi/muq5eYI01JY/mqdefault.jpg" alt="" loading="lazy"></a>
+            <p class="dcKicker">Camera · Produce · Edit</p>
             <p class="dcTitle">It's Not Racist To Want The "Temporary" Haitians Gone</p>
-            <p class="dcRole">Produced and edited the full video and the short.</p>
+            <p class="dcRole">Filmed, produced, and edited the full video and the short.</p>
             <div class="dcLinks">
               <a class="dcLink" href="https://youtu.be/muq5eYI01JY" target="_blank" rel="noopener">▶ YouTube Video</a>
               <a class="dcLink" href="https://youtube.com/shorts/4prvmvtTpYE" target="_blank" rel="noopener">YouTube Short</a>
@@ -272,9 +304,10 @@
           </div>
 
           <div class="dcCard">
-            <p class="dcKicker">Produce + Edit</p>
+            <a class="dcThumb" href="https://youtube.com/shorts/scY41f4P7xU" target="_blank" rel="noopener"><img src="https://img.youtube.com/vi/scY41f4P7xU/mqdefault.jpg" alt="" loading="lazy"></a>
+            <p class="dcKicker">Camera · Produce · Edit</p>
             <p class="dcTitle">Birthright Citizenship is Inherently Anti-American</p>
-            <p class="dcRole">Produced and edited the short and reel.</p>
+            <p class="dcRole">Filmed, produced, and edited the short and reel.</p>
             <div class="dcLinks">
               <a class="dcLink" href="https://youtube.com/shorts/scY41f4P7xU" target="_blank" rel="noopener">YouTube Short</a>
               <a class="dcLink" href="https://www.instagram.com/reel/DaS-RBFJDEt/" target="_blank" rel="noopener">Instagram Reel</a>
@@ -282,18 +315,20 @@
           </div>
 
           <div class="dcCard">
-            <p class="dcKicker">Produce + Edit</p>
+            <a class="dcThumb" href="https://youtu.be/FOguNpF0kLg" target="_blank" rel="noopener"><img src="https://img.youtube.com/vi/FOguNpF0kLg/mqdefault.jpg" alt="" loading="lazy"></a>
+            <p class="dcKicker">Camera · Produce · Edit</p>
             <p class="dcTitle">The Most Annoying People You Know Are Mad at the Peace Deal</p>
-            <p class="dcRole">Produced and edited the full video.</p>
+            <p class="dcRole">Filmed, produced, and edited the full video.</p>
             <div class="dcLinks">
               <a class="dcLink" href="https://youtu.be/FOguNpF0kLg" target="_blank" rel="noopener">▶ YouTube Video</a>
             </div>
           </div>
 
           <div class="dcCard">
-            <p class="dcKicker">Produce + Edit</p>
+            <a class="dcThumb" href="https://youtu.be/E9YUFh2JOHg" target="_blank" rel="noopener"><img src="https://img.youtube.com/vi/E9YUFh2JOHg/mqdefault.jpg" alt="" loading="lazy"></a>
+            <p class="dcKicker">Camera · Produce · Edit</p>
             <p class="dcTitle">America's Bad PR Just Got Destroyed by Soccer Fans</p>
-            <p class="dcRole">Produced and edited the full video.</p>
+            <p class="dcRole">Filmed, produced, and edited the full video.</p>
             <div class="dcLinks">
               <a class="dcLink" href="https://youtu.be/E9YUFh2JOHg" target="_blank" rel="noopener">▶ YouTube Video</a>
             </div>
@@ -305,13 +340,14 @@
       <!-- 3. Ashley Brasfield -->
       <div class="dcGroup">
         <h2 class="dcGroupTitle">🎙️ Ashley Brasfield — Correspondent</h2>
-        <p class="dcGroupSub">Filmed, produced, and edited videos, shorts, and X cuts for correspondent Ashley Brasfield.</p>
+        <p class="dcGroupSub">Filmed, produced, and edited all videos, shorts, and X cuts for correspondent Ashley Brasfield.</p>
         <div class="dcGrid">
 
           <div class="dcCard">
-            <p class="dcKicker">Camera + Produce</p>
+            <a class="dcThumb" href="https://youtu.be/X2wDwzqJHU8" target="_blank" rel="noopener"><img src="https://img.youtube.com/vi/X2wDwzqJHU8/mqdefault.jpg" alt="" loading="lazy"></a>
+            <p class="dcKicker">Camera · Produce · Edit</p>
             <p class="dcTitle">Author Sues Coffee Chain for Discrimination After Book Was Axed</p>
-            <p class="dcRole">Filmed and produced the two-person sit-down interview.</p>
+            <p class="dcRole">Filmed, produced, and edited the two-person sit-down interview.</p>
             <div class="dcLinks">
               <a class="dcLink" href="https://youtu.be/X2wDwzqJHU8" target="_blank" rel="noopener">▶ YouTube Video</a>
               <a class="dcLink" href="https://x.com/DailyCaller/status/2066579433058599122" target="_blank" rel="noopener">𝕏 Post</a>
@@ -319,9 +355,10 @@
           </div>
 
           <div class="dcCard">
-            <p class="dcKicker">Produce + Edit</p>
+            <a class="dcThumb" href="https://youtu.be/_2O9yAPjVZk" target="_blank" rel="noopener"><img src="https://img.youtube.com/vi/_2O9yAPjVZk/mqdefault.jpg" alt="" loading="lazy"></a>
+            <p class="dcKicker">Camera · Produce · Edit</p>
             <p class="dcTitle">Instagram Models</p>
-            <p class="dcRole">Produced and edited the full video, short, and X cut.</p>
+            <p class="dcRole">Filmed, produced, and edited the full video, short, and X cut.</p>
             <div class="dcLinks">
               <a class="dcLink" href="https://youtu.be/_2O9yAPjVZk" target="_blank" rel="noopener">▶ YouTube Video</a>
               <a class="dcLink" href="https://youtube.com/shorts/FW5wQZY6M6M" target="_blank" rel="noopener">YouTube Short</a>
@@ -330,9 +367,10 @@
           </div>
 
           <div class="dcCard">
-            <p class="dcKicker">Produce + Edit</p>
+            <a class="dcThumb" href="https://youtu.be/He5ijywS7mE" target="_blank" rel="noopener"><img src="https://img.youtube.com/vi/He5ijywS7mE/mqdefault.jpg" alt="" loading="lazy"></a>
+            <p class="dcKicker">Camera · Produce · Edit</p>
             <p class="dcTitle">Stabbing in Atlanta Metro</p>
-            <p class="dcRole">Produced and edited the full video and X cut.</p>
+            <p class="dcRole">Filmed, produced, and edited the full video and X cut.</p>
             <div class="dcLinks">
               <a class="dcLink" href="https://youtu.be/He5ijywS7mE" target="_blank" rel="noopener">▶ YouTube Video</a>
               <a class="dcLink" href="https://x.com/BrasfieldAshley/status/2062199441969631601" target="_blank" rel="noopener">𝕏 Post</a>
@@ -416,6 +454,7 @@
         <div class="dcGrid">
 
           <div class="dcCard">
+            <a class="dcThumb" href="https://youtu.be/JGeuBGVqDww" target="_blank" rel="noopener"><img src="https://img.youtube.com/vi/JGeuBGVqDww/mqdefault.jpg" alt="" loading="lazy"></a>
             <p class="dcKicker">Edit + Captions</p>
             <p class="dcTitle">INSIDE CECOT: MS-13 Member Admitted to Killing Over THIRTY People</p>
             <p class="dcRole">Clipped horizontal and vertical versions and added captions.</p>
@@ -428,6 +467,7 @@
           </div>
 
           <div class="dcCard">
+            <a class="dcThumb" href="https://youtu.be/PcqZZBAiZ44" target="_blank" rel="noopener"><img src="https://img.youtube.com/vi/PcqZZBAiZ44/mqdefault.jpg" alt="" loading="lazy"></a>
             <p class="dcKicker">Edit + Captions</p>
             <p class="dcTitle">Rival Gang Members are Forced to Coexist FOREVER in El Salvador’s CECOT</p>
             <p class="dcRole">Clipped horizontal and vertical versions and added captions.</p>
@@ -440,6 +480,7 @@
           </div>
 
           <div class="dcCard">
+            <a class="dcThumb" href="https://youtu.be/6sHFE_DNnWg" target="_blank" rel="noopener"><img src="https://img.youtube.com/vi/6sHFE_DNnWg/mqdefault.jpg" alt="" loading="lazy"></a>
             <p class="dcKicker">Edit + Captions</p>
             <p class="dcTitle">Before CECOT: When El Salvador Became The Murder Capital Of The World</p>
             <p class="dcRole">Clipped horizontal and vertical versions and added captions.</p>
@@ -452,6 +493,7 @@
           </div>
 
           <div class="dcCard">
+            <a class="dcThumb" href="https://youtu.be/0gK2d8al_sE" target="_blank" rel="noopener"><img src="https://img.youtube.com/vi/0gK2d8al_sE/mqdefault.jpg" alt="" loading="lazy"></a>
             <p class="dcKicker">Edit + Captions</p>
             <p class="dcTitle">WATCH: EIGHTY INMATES Per Cell in El Salvador’s Mega-Prison</p>
             <p class="dcRole">Clipped horizontal and vertical versions and added captions.</p>
@@ -464,6 +506,7 @@
           </div>
 
           <div class="dcCard">
+            <a class="dcThumb" href="https://youtu.be/PcqZZBAiZ44" target="_blank" rel="noopener"><img src="https://img.youtube.com/vi/PcqZZBAiZ44/mqdefault.jpg" alt="" loading="lazy"></a>
             <p class="dcKicker">Edit + Captions</p>
             <p class="dcTitle">El Salvador Built a Fortress To Single-Handedly END Years of Gang Rule</p>
             <p class="dcRole">Clipped horizontal and vertical versions and added captions.</p>
@@ -475,6 +518,7 @@
           </div>
 
           <div class="dcCard">
+            <a class="dcThumb" href="https://youtube.com/shorts/jlpLSxBBX50" target="_blank" rel="noopener"><img src="https://img.youtube.com/vi/jlpLSxBBX50/mqdefault.jpg" alt="" loading="lazy"></a>
             <p class="dcKicker">Edit + Captions</p>
             <p class="dcTitle">Filling Up CECOT: El Salvador's Massive Crackdown</p>
             <p class="dcRole">Clipped horizontal and vertical versions and added captions.</p>
@@ -490,10 +534,11 @@
       <!-- 6a. Puppet series -->
       <div class="dcGroup">
         <h2 class="dcGroupTitle">🎭 Triggered Senior Citizens ATTACK Puppet at Protest</h2>
-        <p class="dcGroupSub">A field series edited from protest footage — multiple cuts published as YouTube Shorts and Instagram Reels.</p>
+        <p class="dcGroupSub">I edited and clipped multiple cuts from field footage of this protest, published as YouTube Shorts and Instagram Reels.</p>
         <div class="dcGrid">
 
           <div class="dcCard">
+            <a class="dcThumb" href="https://youtube.com/shorts/y_V0uhmzj2g" target="_blank" rel="noopener"><img src="https://img.youtube.com/vi/y_V0uhmzj2g/mqdefault.jpg" alt="" loading="lazy"></a>
             <p class="dcKicker">Edit · Field Footage</p>
             <p class="dcTitle">Puppet at Protest — Cut 1</p>
             <p class="dcRole">Edited this cut from field footage.</p>
@@ -503,6 +548,7 @@
           </div>
 
           <div class="dcCard">
+            <a class="dcThumb" href="https://youtube.com/shorts/S4OJfQaRslA" target="_blank" rel="noopener"><img src="https://img.youtube.com/vi/S4OJfQaRslA/mqdefault.jpg" alt="" loading="lazy"></a>
             <p class="dcKicker">Edit · Field Footage</p>
             <p class="dcTitle">Puppet at Protest — Cut 2</p>
             <p class="dcRole">Edited this cut from field footage.</p>
@@ -532,61 +578,7 @@
         </div>
       </div>
 
-      <!-- 6b. Field videos -->
-      <div class="dcGroup">
-        <h2 class="dcGroupTitle">🎥 Field Videos</h2>
-        <p class="dcGroupSub">On-location field filming around D.C.</p>
-        <div class="dcGrid">
-
-          <div class="dcCard">
-            <p class="dcKicker">Camera · Field</p>
-            <p class="dcTitle">Asking Liberal Bruce Springsteen Fans Offensive Questions</p>
-            <p class="dcRole">Filmed the man-on-the-street segment on location.</p>
-            <div class="dcLinks">
-              <a class="dcLink" href="https://youtu.be/iaWqDvbh5hk" target="_blank" rel="noopener">▶ YouTube Video</a>
-            </div>
-          </div>
-
-        </div>
       </div>
-
-      <!-- 7. Directed & produced features -->
-      <div class="dcGroup">
-        <h2 class="dcGroupTitle">⭐ Features I Directed &amp; Produced</h2>
-        <p class="dcGroupSub">Projects I directed, produced, and edited at Florida State University.</p>
-        <div class="dcGrid">
-
-          <div class="dcCard">
-            <p class="dcKicker">Directed · Produced · Edited</p>
-            <p class="dcTitle">Advance Feature: All-Night Yahtzee — FSU A Cappella</p>
-            <p class="dcRole">Directed, produced, and edited this short advance feature on Florida State's premier a cappella group.</p>
-            <div class="dcLinks">
-              <a class="dcLink" href="https://youtu.be/OTm5nPMg01I" target="_blank" rel="noopener">▶ YouTube Video</a>
-            </div>
-          </div>
-
-          <div class="dcCard">
-            <p class="dcKicker">Directed · Produced · Edited</p>
-            <p class="dcTitle">Clutch Magazine — FSU Student-Led Fashion Feature</p>
-            <p class="dcRole">Directed, produced, and edited this short feature for FSU's student-led fashion magazine.</p>
-            <div class="dcLinks">
-              <a class="dcLink" href="https://youtu.be/xHxVRwR40rI" target="_blank" rel="noopener">▶ YouTube Video</a>
-            </div>
-          </div>
-
-          <div class="dcCard">
-            <p class="dcKicker">Directed</p>
-            <p class="dcTitle">Documentary — Dog Euthanization</p>
-            <p class="dcRole">Directed this documentary exploring euthanization in animal shelters and the ethical debates behind it.</p>
-            <div class="dcLinks">
-              <a class="dcLink" href="https://youtu.be/HZwK5_i530s" target="_blank" rel="noopener">▶ YouTube Video</a>
-            </div>
-          </div>
-
-        </div>
-      </div>
-
-    </div>
 
     <!-- ===== TAB: SPORTS ===== -->
     <div class="tabPanel" id="tab-sports" role="tabpanel">
@@ -742,97 +734,98 @@
       </div>
     </div>
 
-    <!-- ===== TAB: DOCS ===== -->
-    <div class="tabPanel" id="tab-docs" role="tabpanel">
+    <!-- ===== TAB: DIRECTED & PRODUCED ===== -->
+    <div class="tabPanel" id="tab-features" role="tabpanel">
+      <p class="dcIntro">Projects I directed, produced, and edited at Florida State University.</p>
+      <div class="videoGrid">
 
-      <!-- Subtabs -->
-      <div class="subtabs" role="tablist" aria-label="Documentary subcategories">
-        <button class="subtabBtn active" type="button" data-subtab="doc">🎞️ Documentary</button>
-        <button class="subtabBtn" type="button" data-subtab="info">🧠 Informational</button>
-      </div>
-
-      <!-- Subpanel: Documentary -->
-      <div class="subPanel active" id="sub-doc">
-        <div class="videoGrid">
-
-          <div class="videoCard">
-            <div class="videoEmbed">
-              <iframe src="https://www.youtube.com/embed/HZwK5_i530s" allowfullscreen></iframe>
-            </div>
-            <div class="videoMeta">
-              <h3><strong>Documentary — Dog Euthanization</strong></h3>
-              <p>Documentary I directed exploring euthanization in animal shelters and the ethical debates behind it.</p>
-            </div>
+        <div class="videoCard">
+          <div class="videoEmbed">
+            <iframe src="https://www.youtube.com/embed/HZwK5_i530s" allowfullscreen></iframe>
           </div>
-
-          <div class="videoCard">
-            <div class="videoEmbed">
-              <iframe src="https://www.youtube.com/embed/xHxVRwR40rI" allowfullscreen></iframe>
-            </div>
-            <div class="videoMeta">
-              <h3><strong>Clutch Magazine — FSU Student-Led Fashion Feature</strong></h3>
-              <p>Short feature for Clutch Magazine, FSU's student-led fashion magazine. I directed, produced, and edited.</p>
-            </div>
+          <div class="videoMeta">
+            <h3><strong>Documentary — Dog Euthanization</strong></h3>
+            <p>Documentary I directed exploring euthanization in animal shelters and the ethical debates behind it.</p>
           </div>
-
         </div>
-      </div>
 
-      <!-- Subpanel: Informational -->
-      <div class="subPanel" id="sub-info">
-        <div class="videoGrid">
-
-          <div class="videoCard">
-            <div class="videoEmbed">
-              <iframe src="https://www.youtube.com/embed/61fEg5Bn5hA" allowfullscreen></iframe>
-            </div>
-            <div class="videoMeta">
-              <h3><strong>Voices of Resistance: Holocaust Impact Theatre</strong></h3>
-              <p>Short informational video I edited and produced to highlight interconnected forms of oppression, including the Holocaust, immigration, the Black Lives Matter movement, and women’s rights. Featured on Channel 10 News.</p>
-            </div>
+        <div class="videoCard">
+          <div class="videoEmbed">
+            <iframe src="https://www.youtube.com/embed/xHxVRwR40rI" allowfullscreen></iframe>
           </div>
-
-          <div class="videoCard">
-            <div class="videoEmbed">
-              <iframe src="https://www.youtube.com/embed/jlcqW2JM0hQ" allowfullscreen></iframe>
-            </div>
-            <div class="videoMeta">
-              <h3><strong>Black Lives Matter: Holocaust Impact Theatre</strong></h3>
-              <p>Short informational video I edited and produced to examine the Black Lives Matter movement and its role in advocating for racial justice and equality. Featured on Channel 10 News.</p>
-            </div>
+          <div class="videoMeta">
+            <h3><strong>Clutch Magazine — FSU Student-Led Fashion Feature</strong></h3>
+            <p>Short feature for Clutch Magazine, FSU's student-led fashion magazine. I directed, produced, and edited.</p>
           </div>
-
-          <div class="videoCard">
-            <div class="videoEmbed">
-              <iframe src="https://www.youtube.com/embed/n-Y-jokDh1A" allowfullscreen></iframe>
-            </div>
-            <div class="videoMeta">
-              <h3><strong>The Lasting Impacts of the Holocaust: Holocaust Impact Theatre</strong></h3>
-              <p>Short informational video I edited and produced to examine the Holocaust and its lasting impact on humanity. Featured on Channel 10 News.</p>
-            </div>
-          </div>
-
-          <div class="videoCard">
-            <div class="videoEmbed">
-              <iframe src="https://www.youtube.com/embed/fTvlLFQUcTE" allowfullscreen></iframe>
-            </div>
-            <div class="videoMeta">
-              <h3><strong>Understanding Immigration in the United States: Holocaust Impact Theatre</strong></h3>
-              <p>Short informational video I edited and produced to explore immigration, deportation, and refugee experiences in the United States. Featured on Channel 10 News.</p>
-            </div>
-          </div>
-
-          <div class="videoCard">
-            <div class="videoEmbed">
-              <iframe src="https://www.youtube.com/embed/FxEjYUB6xnQ" allowfullscreen></iframe>
-            </div>
-            <div class="videoMeta">
-              <h3><strong>This Is Totally Bananas (Real or Cake)</strong></h3>
-              <p>YouTube reel edited for social media creators Simmi Singh and Greg Lindsay.</p>
-            </div>
-          </div>
-
         </div>
+
+        <div class="videoCard">
+          <div class="videoEmbed">
+            <iframe src="https://www.youtube.com/embed/OTm5nPMg01I" allowfullscreen></iframe>
+          </div>
+          <div class="videoMeta">
+            <h3><strong>Advance Feature: All-Night Yahtzee — FSU A Cappella</strong></h3>
+            <p>Short advance feature on FSU's premier a cappella group. I directed, produced, and edited.</p>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+    <!-- ===== TAB: INFORMATIONAL ===== -->
+    <div class="tabPanel" id="tab-info" role="tabpanel">
+      <div class="videoGrid">
+
+        <div class="videoCard">
+          <div class="videoEmbed">
+            <iframe src="https://www.youtube.com/embed/61fEg5Bn5hA" allowfullscreen></iframe>
+          </div>
+          <div class="videoMeta">
+            <h3><strong>Voices of Resistance: Holocaust Impact Theatre</strong></h3>
+            <p>Short informational video I edited and produced to highlight interconnected forms of oppression, including the Holocaust, immigration, the Black Lives Matter movement, and women’s rights. Featured on Channel 10 News.</p>
+          </div>
+        </div>
+
+        <div class="videoCard">
+          <div class="videoEmbed">
+            <iframe src="https://www.youtube.com/embed/jlcqW2JM0hQ" allowfullscreen></iframe>
+          </div>
+          <div class="videoMeta">
+            <h3><strong>Black Lives Matter: Holocaust Impact Theatre</strong></h3>
+            <p>Short informational video I edited and produced to examine the Black Lives Matter movement and its role in advocating for racial justice and equality. Featured on Channel 10 News.</p>
+          </div>
+        </div>
+
+        <div class="videoCard">
+          <div class="videoEmbed">
+            <iframe src="https://www.youtube.com/embed/n-Y-jokDh1A" allowfullscreen></iframe>
+          </div>
+          <div class="videoMeta">
+            <h3><strong>The Lasting Impacts of the Holocaust: Holocaust Impact Theatre</strong></h3>
+            <p>Short informational video I edited and produced to examine the Holocaust and its lasting impact on humanity. Featured on Channel 10 News.</p>
+          </div>
+        </div>
+
+        <div class="videoCard">
+          <div class="videoEmbed">
+            <iframe src="https://www.youtube.com/embed/fTvlLFQUcTE" allowfullscreen></iframe>
+          </div>
+          <div class="videoMeta">
+            <h3><strong>Understanding Immigration in the United States: Holocaust Impact Theatre</strong></h3>
+            <p>Short informational video I edited and produced to explore immigration, deportation, and refugee experiences in the United States. Featured on Channel 10 News.</p>
+          </div>
+        </div>
+
+        <div class="videoCard">
+          <div class="videoEmbed">
+            <iframe src="https://www.youtube.com/embed/FxEjYUB6xnQ" allowfullscreen></iframe>
+          </div>
+          <div class="videoMeta">
+            <h3><strong>This Is Totally Bananas (Real or Cake)</strong></h3>
+            <p>YouTube reel edited for social media creators Simmi Singh and Greg Lindsay.</p>
+          </div>
+        </div>
+
       </div>
     </div>
 
