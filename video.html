@@ -41,10 +41,10 @@
     .dcHead{ cursor:pointer; -webkit-tap-highlight-color:transparent; user-select:none; }
     .dcAvatar{
       width:58px; height:58px; border-radius:50%; object-fit:cover; flex:0 0 auto;
-      filter: grayscale(1) contrast(1.05); border: 1px solid var(--hair);
-      transition: filter .35s ease, border-color .35s ease;
+      border: 1px solid var(--hair);
+      transition: border-color .35s ease;
     }
-    .dcGroup:hover .dcAvatar{ filter:none; border-color: var(--pop); }
+    .dcGroup:hover .dcAvatar{ border-color: var(--pop); }
     .dcTitleWrap{ min-width:0; }
     .dcEyebrow{
       display:block; font-size: 10.5px; letter-spacing: .3em; text-transform: uppercase;
@@ -62,10 +62,10 @@
     }
     .dcChevron{
       flex:0 0 auto; width:34px; height:34px; display:flex; align-items:center; justify-content:center;
-      font-family: 'Playfair Display', Georgia, serif; font-size: 22px; font-weight: 500;
+      font-size: 15px;
       color: var(--faint); transition: transform .3s ease, color .3s ease;
     }
-    .dcGroup.open .dcChevron{ transform: rotate(45deg); color: var(--pop); }
+    .dcGroup.open .dcChevron{ transform: rotate(180deg); color: var(--pop); }
     .dcGroupSub{
       font-family: 'Playfair Display', Georgia, serif; font-style: italic;
       color: var(--faint); font-size: 15.5px; line-height: 1.6; max-width: 700px; margin: 16px 0 26px;
@@ -82,12 +82,10 @@
     .dcThumb{ display:block; overflow:hidden; background:#111; }
     .dcThumb img{
       display:block; width:100%; height:170px; object-fit:cover;
-      filter: grayscale(1) contrast(1.06);
-      transition: filter .45s ease, transform .6s ease;
+      transition: transform .6s ease;
     }
     .dcCard.featured .dcThumb img{ height: 340px; object-position: center 30%; }
-    .dcCard:hover .dcThumb img{ filter:none; transform: scale(1.025); }
-    @media (hover: none){ .dcThumb img{ filter:none; } .dcAvatar{ filter:none; } }
+    .dcCard:hover .dcThumb img{ transform: scale(1.03); }
     .dcKicker{
       font-size: 9.5px; letter-spacing: .28em; text-transform: uppercase;
       color: var(--pop); font-weight: 700; margin: 4px 0 0;
@@ -187,7 +185,7 @@
 
       <!-- 1. Eduard Habsburg / Vatican series -->
       <div class="dcGroup open">
-        <div class="dcSecHead dcHead" role="button" tabindex="0"><img class="dcAvatar" src="assets/profiles/dailycaller.jpg" alt="" loading="lazy" onerror="this.style.display='none'"><div class="dcTitleWrap"><span class="dcEyebrow">The Interview</span><h2 class="dcGroupTitle">Eduard Habsburg</h2></div><span class="dcCount">6 films</span><div class="dcChevron">+</div></div>
+        <div class="dcSecHead dcHead" role="button" tabindex="0"><img class="dcAvatar" src="assets/profiles/dailycaller.jpg" alt="" loading="lazy" onerror="this.style.display='none'"><div class="dcTitleWrap"><span class="dcEyebrow">The Interview</span><h2 class="dcGroupTitle">Eduard Habsburg</h2></div><span class="dcCount">6 films</span><div class="dcChevron">▾</div></div>
         <div class="dcBody"><p class="dcGroupSub">I operated camera on this studio interview with Eduard Habsburg — Hungary's Ambassador to the Holy See, with 154K followers on YouTube — then edited the full 49-minute video and cut a series of shorts from the footage.</p>
         <div class="dcGrid">
 
@@ -256,7 +254,7 @@
 
       <!-- 2. Rebeka Zeljko -->
       <div class="dcGroup open">
-        <div class="dcSecHead dcHead" role="button" tabindex="0"><img class="dcAvatar" src="assets/profiles/rebeka.jpg" alt="" loading="lazy" onerror="this.style.display='none'"><div class="dcTitleWrap"><span class="dcEyebrow">The Correspondents</span><h2 class="dcGroupTitle">Rebeka Zeljko</h2></div><span class="dcCount">14 films</span><div class="dcChevron">+</div></div>
+        <div class="dcSecHead dcHead" role="button" tabindex="0"><img class="dcAvatar" src="assets/profiles/rebeka.jpg" alt="" loading="lazy" onerror="this.style.display='none'"><div class="dcTitleWrap"><span class="dcEyebrow">The Correspondents</span><h2 class="dcGroupTitle">Rebeka Zeljko</h2></div><span class="dcCount">14 films</span><div class="dcChevron">▾</div></div>
         <div class="dcBody"><p class="dcGroupSub">Filmed, produced, and edited 14 videos for national correspondent Rebeka Zeljko, plus the shorts and social cuts published alongside each one. Listed in chronological order.</p>
         <div class="dcGrid">
 
@@ -421,7 +419,7 @@
 
       <!-- 3. Ashley Brasfield -->
       <div class="dcGroup open">
-        <div class="dcSecHead dcHead" role="button" tabindex="0"><img class="dcAvatar" src="assets/profiles/ashley.jpg" alt="" loading="lazy" onerror="this.style.display='none'"><div class="dcTitleWrap"><span class="dcEyebrow">The Correspondents</span><h2 class="dcGroupTitle">Ashley Brasfield</h2></div><span class="dcCount">3 films</span><div class="dcChevron">+</div></div>
+        <div class="dcSecHead dcHead" role="button" tabindex="0"><img class="dcAvatar" src="assets/profiles/ashley.jpg" alt="" loading="lazy" onerror="this.style.display='none'"><div class="dcTitleWrap"><span class="dcEyebrow">The Correspondents</span><h2 class="dcGroupTitle">Ashley Brasfield</h2></div><span class="dcCount">3 films</span><div class="dcChevron">▾</div></div>
         <div class="dcBody"><p class="dcGroupSub">Filmed, produced, and edited all videos, shorts, and X cuts for correspondent Ashley Brasfield.</p>
         <div class="dcGrid">
 
@@ -464,7 +462,7 @@
 
       <!-- 4. Reagan Reese -->
       <div class="dcGroup open">
-        <div class="dcSecHead dcHead" role="button" tabindex="0"><img class="dcAvatar" src="assets/profiles/reagan.jpg" alt="" loading="lazy" onerror="this.style.display='none'"><div class="dcTitleWrap"><span class="dcEyebrow">The White House</span><h2 class="dcGroupTitle">Reagan Reese</h2></div><span class="dcCount">6 films</span><div class="dcChevron">+</div></div>
+        <div class="dcSecHead dcHead" role="button" tabindex="0"><img class="dcAvatar" src="assets/profiles/reagan.jpg" alt="" loading="lazy" onerror="this.style.display='none'"><div class="dcTitleWrap"><span class="dcEyebrow">The White House</span><h2 class="dcGroupTitle">Reagan Reese</h2></div><span class="dcCount">6 films</span><div class="dcChevron">▾</div></div>
         <div class="dcBody"><p class="dcGroupSub">Edited, clipped, and captioned social reels for White House correspondent Reagan Reese, published on Instagram and X.</p>
         <div class="dcGrid">
 
@@ -531,7 +529,7 @@
 
       <!-- 5. El Salvador / CECOT documentary clips -->
       <div class="dcGroup open">
-        <div class="dcSecHead dcHead" role="button" tabindex="0"><img class="dcAvatar" src="assets/profiles/dailycaller.jpg" alt="" loading="lazy" onerror="this.style.display='none'"><div class="dcTitleWrap"><span class="dcEyebrow">The Documentary</span><h2 class="dcGroupTitle">Inside CECOT</h2></div><span class="dcCount">6 films</span><div class="dcChevron">+</div></div>
+        <div class="dcSecHead dcHead" role="button" tabindex="0"><img class="dcAvatar" src="assets/profiles/dailycaller.jpg" alt="" loading="lazy" onerror="this.style.display='none'"><div class="dcTitleWrap"><span class="dcEyebrow">The Documentary</span><h2 class="dcGroupTitle">Inside CECOT</h2></div><span class="dcCount">6 films</span><div class="dcChevron">▾</div></div>
         <div class="dcBody"><p class="dcGroupSub">Clipped a Daily Caller documentary into horizontal and vertical social cuts with captions, published as YouTube videos, Shorts, Instagram reels, and X posts.</p>
         <div class="dcGrid">
 
@@ -615,7 +613,7 @@
 
       <!-- 6a. Puppet Edgar series -->
       <div class="dcGroup open">
-        <div class="dcSecHead dcHead" role="button" tabindex="0"><img class="dcAvatar" src="assets/profiles/puppet.jpg" alt="" loading="lazy" onerror="this.style.display='none'"><div class="dcTitleWrap"><span class="dcEyebrow">On the Street</span><h2 class="dcGroupTitle">Puppet Edgar</h2></div><span class="dcCount">5 films</span><div class="dcChevron">+</div></div>
+        <div class="dcSecHead dcHead" role="button" tabindex="0"><img class="dcAvatar" src="assets/profiles/puppet.jpg" alt="" loading="lazy" onerror="this.style.display='none'"><div class="dcTitleWrap"><span class="dcEyebrow">On the Street</span><h2 class="dcGroupTitle">Puppet Edgar</h2></div><span class="dcCount">5 films</span><div class="dcChevron">▾</div></div>
         <div class="dcBody"><p class="dcGroupSub">Field videos featuring Puppet Edgar. I filmed the man-on-the-street video on location, and edited and clipped multiple cuts from protest footage, published as YouTube Shorts and Instagram Reels.</p>
         <div class="dcGrid">
 
@@ -982,10 +980,9 @@
 
     // Collapsible Daily Caller sections ("folders")
     const dcGroups = document.querySelectorAll(".dcGroup");
-    const isMobile = window.matchMedia("(max-width: 700px)").matches;
     dcGroups.forEach((g, i) => {
-      // Sections ship open; on mobile, fold all but the first.
-      if(isMobile && i > 0) g.classList.remove("open");
+      // First section open on load; the rest folded until tapped.
+      if(i > 0) g.classList.remove("open");
       const head = g.querySelector(".dcHead");
       if(!head) return;
       const toggle = () => g.classList.toggle("open");
