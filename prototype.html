@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Prototype — Multiviewer</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700;900&display=swap" rel="stylesheet">
+<style>
+  :root{ --bg:#07070a; --ink:#f5f4f2; --muted:rgba(255,255,255,.6); --hair:rgba(255,255,255,.16); --pop:#FF2D46; }
+  *{ box-sizing:border-box; margin:0; padding:0; }
+  body{ background:var(--bg); color:var(--ink); font-family:system-ui,-apple-system,sans-serif; -webkit-font-smoothing:antialiased; }
+  a{ color:inherit; text-decoration:none; }
+  .wrap{ max-width:1180px; margin:0 auto; padding:22px 20px 60px; }
+
+  /* top bar */
+  .bar{ display:flex; align-items:center; justify-content:space-between; padding-bottom:26px; }
+  .brand{ font-weight:700; font-size:15px; letter-spacing:.02em; }
+  .barLinks{ display:flex; gap:20px; font-size:12px; letter-spacing:.14em; text-transform:uppercase; color:var(--muted); }
+  .barLinks a:hover{ color:var(--pop); }
+
+  /* header */
+  .live{ display:inline-flex; align-items:center; gap:8px; font-size:11px; letter-spacing:.28em; text-transform:uppercase; color:var(--pop); font-weight:700; margin-bottom:14px; }
+  .dot{ width:8px; height:8px; border-radius:50%; background:var(--pop); animation:pulse 1.6s infinite; }
+  @keyframes pulse{ 0%,100%{ opacity:1 } 50%{ opacity:.3 } }
+  h1{ font-family:'Playfair Display',serif; font-weight:900; font-size:clamp(34px,6vw,64px); line-height:.98; letter-spacing:-.01em; margin-bottom:14px; }
+  .lead{ color:var(--muted); font-size:16px; max-width:560px; line-height:1.55; margin-bottom:8px; }
+  .hint{ font-size:12px; letter-spacing:.16em; text-transform:uppercase; color:var(--pop); font-weight:700; margin:22px 0 16px; }
+
+  /* the wall */
+  .wall{ display:grid; grid-template-columns:repeat(3,1fr); gap:14px; }
+  .screen{ position:relative; display:block; border:1px solid var(--hair); border-radius:12px; overflow:hidden; background:#111; aspect-ratio:16/10; transition:border-color .2s ease, transform .2s ease; }
+  .screen:hover{ border-color:var(--pop); transform:translateY(-3px); }
+  .screen img{ width:100%; height:100%; object-fit:cover; opacity:.55; transition:opacity .3s ease, transform .6s ease; }
+  .screen:hover img{ opacity:.8; transform:scale(1.05); }
+  .scanline{ position:absolute; inset:0; background:linear-gradient(180deg,rgba(0,0,0,.1),rgba(0,0,0,.55)); pointer-events:none; }
+  .ch{ position:absolute; top:10px; left:10px; font-size:10px; letter-spacing:.2em; text-transform:uppercase; font-weight:700; color:var(--ink); background:rgba(0,0,0,.55); padding:4px 8px; border-radius:4px; }
+  .cap{ position:absolute; left:12px; right:12px; bottom:12px; }
+  .cap .lbl{ font-size:10px; letter-spacing:.2em; text-transform:uppercase; color:var(--pop); font-weight:700; display:block; margin-bottom:4px; }
+  .cap .nm{ font-family:'Playfair Display',serif; font-weight:700; font-size:19px; line-height:1.15; }
+  .cap .ct{ font-size:11px; color:var(--muted); margin-top:4px; }
+
+  /* fast lane */
+  .fast{ margin-top:30px; display:flex; flex-wrap:wrap; gap:12px; }
+  .fbtn{ padding:13px 20px; border-radius:999px; font-size:13px; font-weight:700; letter-spacing:.02em; border:1px solid var(--hair); transition:all .18s ease; }
+  .fbtn:hover{ border-color:var(--pop); color:var(--pop); }
+  .fbtn.solid{ background:var(--pop); border-color:var(--pop); color:#0a0a0b; }
+
+  @media (max-width:760px){
+    .wall{ grid-template-columns:1fr; gap:12px; }
+    .screen{ aspect-ratio:16/9; }
+    .barLinks{ display:none; }
+    .fast{ }
+    .fbtn{ flex:1; text-align:center; }
+    .cap .nm{ font-size:20px; }
+  }
+</style>
+</head>
+<body>
+  <div class="wrap">
+    <div class="bar">
+      <div class="brand">Ella Stephenson De Castro</div>
+      <div class="barLinks">
+        <a href="#">Work</a><a href="#">Photography</a><a href="#">About</a><a href="#">Résumé</a>
+      </div>
+    </div>
+
+    <span class="live"><span class="dot"></span> On air</span>
+    <h1>Videographer,<br>editor &amp; producer.</h1>
+    <p class="lead">Live broadcast, studio interviews, documentary, and story-driven video. Pick a channel to see the work.</p>
+
+    <p class="hint">↓ Tap a screen to open</p>
+
+    <div class="wall">
+      <a class="screen" href="#">
+        <img src="https://img.youtube.com/vi/oSG-CUB0ouE/mqdefault.jpg" alt="">
+        <div class="scanline"></div>
+        <span class="ch">CH 01</span>
+        <div class="cap"><span class="lbl">Newsroom · D.C.</span><div class="nm">Daily Caller</div><div class="ct">15 films</div></div>
+      </a>
+      <a class="screen" href="#">
+        <img src="https://img.youtube.com/vi/kA-0VAU2Jts/mqdefault.jpg" alt="">
+        <div class="scanline"></div>
+        <span class="ch">CH 02</span>
+        <div class="cap"><span class="lbl">Live Broadcast</span><div class="nm">Sports</div><div class="ct">13 films</div></div>
+      </a>
+      <a class="screen" href="#">
+        <img src="https://img.youtube.com/vi/HZwK5_i530s/mqdefault.jpg" alt="">
+        <div class="scanline"></div>
+        <span class="ch">CH 03</span>
+        <div class="cap"><span class="lbl">Directed</span><div class="nm">Documentary</div><div class="ct">3 films</div></div>
+      </a>
+      <a class="screen" href="#">
+        <img src="https://img.youtube.com/vi/OTm5nPMg01I/mqdefault.jpg" alt="">
+        <div class="scanline"></div>
+        <span class="ch">CH 04</span>
+        <div class="cap"><span class="lbl">Produced</span><div class="nm">Features</div><div class="ct">3 films</div></div>
+      </a>
+      <a class="screen" href="#">
+        <img src="https://img.youtube.com/vi/61fEg5Bn5hA/mqdefault.jpg" alt="">
+        <div class="scanline"></div>
+        <span class="ch">CH 05</span>
+        <div class="cap"><span class="lbl">Editorial</span><div class="nm">Informational</div><div class="ct">5 films</div></div>
+      </a>
+      <a class="screen" href="#">
+        <img src="https://img.youtube.com/vi/JGeuBGVqDww/mqdefault.jpg" alt="">
+        <div class="scanline"></div>
+        <span class="ch">CH 06</span>
+        <div class="cap"><span class="lbl">Stills</span><div class="nm">Photography</div><div class="ct">Gallery</div></div>
+      </a>
+    </div>
+
+    <div class="fast">
+      <a class="fbtn solid" href="#">View all work</a>
+      <a class="fbtn" href="#">Résumé (PDF)</a>
+      <a class="fbtn" href="#">Email me</a>
+    </div>
+  </div>
+</body>
+</html>
