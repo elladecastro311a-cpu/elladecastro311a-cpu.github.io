@@ -92,6 +92,19 @@
     .heroKick .onair{ display:inline-flex; align-items:center; gap:6px; color:var(--pop); }
     .heroKick .onair .b{ width:7px; height:7px; border-radius:50%; background:var(--pop); animation:tallyPulse 1.6s infinite; }
     @media (prefers-reduced-motion: reduce){ .tally .live, .heroKick .onair .b{ animation:none; } }
+
+    /* ---- Calmer hero + mobile stacking ---- */
+    .heroCtas .btn{ min-width: 130px; }
+    @media (max-width: 760px){
+      .heroGrid{ display:flex; flex-direction:column; gap:22px; }
+      .heroVisual{ order:-1; }              /* photo first on phones */
+      .heroImage img{ width:100%; height:auto; border-radius:14px; }
+      .heroCtas{ display:flex; gap:10px; }
+      .heroCtas .btn{ flex:1; text-align:center; min-width:0; }
+      .h1{ font-size: 40px; line-height:1.02; }
+      .heroSub{ font-size:15px; }
+      .tally{ top:12px; right:12px; }
+    }
   </style>
 </head>
 
@@ -121,7 +134,7 @@
 
         <!-- LEFT: COPY -->
         <div class="heroCopy">
-          <p class="kicker heroKick"><span class="onair"><span class="b"></span>On air</span> · Broadcast • Film • Photography</p>
+          <p class="kicker heroKick"><span class="onair"><span class="b"></span>On air</span> &nbsp;Videographer · Editor · Producer</p>
 
           <h1 class="h1">
             Live broadcast.<br />
@@ -134,17 +147,10 @@
           </p>
 
 <div class="heroCtas">
-  <a class="btn primary" href="video.html">Watch Video Work</a>
-  <a class="btn" href="photography.html">View Photography</a>
-  <a class="btn" href="EllaStephensonDeCastro_Resume.pdf" target="_blank" rel="noopener">Download Résumé</a>
-  <a class="btn" href="#contact">Contact ↓</a>
+  <a class="btn primary" href="video.html">View Work</a>
+  <a class="btn" href="EllaStephensonDeCastro_Resume.pdf" target="_blank" rel="noopener">Résumé</a>
 </div>
 
-          <div class="heroMeta">
-            <span class="chip">Florida State University</span>
-            <span class="chip">Digital Media Production</span>
-            <span class="chip">Commercial Entrepreneurship</span>
-          </div>
         </div>
 
         <!-- RIGHT: IMAGE -->
@@ -153,15 +159,8 @@
 <img src="./assets/hero-on-set.jpg"
      alt="Ella Stephenson De Castro operating camera on set"
      loading="eager">
-<div class="camScan"></div>
 <span class="tally"><span class="live"></span> On air</span>
-<span class="rec"><span class="dot"></span> Rec</span>
 </div>
-
-          <div class="heroBadge">
-            <div class="heroBadgeTitle">Portfolio</div>
-            <div class="heroBadgeSub">Ella Stephenson De Castro</div>
-          </div>
         </div>
 
       </div>
