@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Prototype 3 — Cover</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,600;0,700;0,900;1,600&display=swap" rel="stylesheet">
+<style>
+  :root{ --ink:#f4f3f1; --muted:rgba(255,255,255,.62); --hair:rgba(255,255,255,.28); --gold:#E8B54A; }
+  *{ box-sizing:border-box; margin:0; padding:0; }
+  html,body{ background:#0a0a0b; color:var(--ink); font-family:system-ui,-apple-system,sans-serif; -webkit-font-smoothing:antialiased; }
+  a{ color:inherit; text-decoration:none; }
+
+  /* ---------- THE COVER ---------- */
+  .cover{ position:relative; height:100svh; min-height:600px; overflow:hidden; }
+  .cover img{ position:absolute; inset:0; width:100%; height:100%; object-fit:cover; object-position:center 30%; filter:grayscale(.4) contrast(1.05) brightness(.72); }
+  .cover::after{ content:""; position:absolute; inset:0; background:
+      linear-gradient(180deg, rgba(0,0,0,.55) 0%, rgba(0,0,0,.15) 30%, rgba(0,0,0,.35) 65%, rgba(0,0,0,.85) 100%); }
+
+  .coverInner{ position:relative; z-index:2; height:100%; max-width:1240px; margin:0 auto; padding:26px 30px 40px; display:flex; flex-direction:column; }
+
+  /* masthead strip */
+  .mast{ display:flex; align-items:center; justify-content:space-between; padding-bottom:22px; border-bottom:1px solid var(--hair); }
+  .mastName{ font-family:'Playfair Display',serif; font-weight:700; font-size:19px; letter-spacing:.01em; }
+  .mastNav{ display:flex; gap:26px; font-size:11px; letter-spacing:.2em; text-transform:uppercase; color:var(--muted); }
+  .mastNav a:hover{ color:var(--gold); }
+
+  /* spec strip under masthead */
+  .coverSpec{ display:grid; grid-template-columns:repeat(3,1fr); gap:20px; padding:16px 0 0; }
+  .coverSpec .lbl{ font-size:9.5px; letter-spacing:.24em; text-transform:uppercase; color:var(--muted); margin-bottom:5px; }
+  .coverSpec .val{ font-family:'Playfair Display',serif; font-style:italic; font-size:14px; }
+
+  /* the big title, bottom-anchored */
+  .coverTitle{ margin-top:auto; }
+  .coverKick{ display:flex; align-items:center; gap:12px; font-size:11px; letter-spacing:.28em; text-transform:uppercase; color:var(--gold); font-weight:700; margin-bottom:16px; }
+  .coverKick::before{ content:""; width:40px; height:1px; background:var(--gold); }
+  .coverH{ font-family:'Playfair Display',serif; font-weight:900; font-size:clamp(52px,12vw,150px); line-height:.9; letter-spacing:-.02em; }
+  .coverH .sm{ display:block; font-size:.34em; font-weight:600; font-style:italic; letter-spacing:0; color:var(--muted); margin-top:18px; max-width:520px; line-height:1.5; }
+  .coverCtas{ display:flex; gap:12px; margin-top:30px; flex-wrap:wrap; }
+  .btn{ padding:14px 26px; border-radius:999px; font-size:12.5px; font-weight:700; letter-spacing:.06em; text-transform:uppercase; border:1px solid var(--hair); transition:all .18s ease; }
+  .btn:hover{ border-color:var(--gold); color:var(--gold); }
+  .btn.solid{ background:var(--gold); border-color:var(--gold); color:#0a0a0b; }
+  .scrollCue{ position:absolute; bottom:20px; left:50%; transform:translateX(-50%); z-index:3; font-size:10px; letter-spacing:.24em; text-transform:uppercase; color:var(--muted); }
+
+  /* ---------- WORK (calm paper) ---------- */
+  .work{ background:#f3f1ec; color:#111; }
+  .workInner{ max-width:1240px; margin:0 auto; padding:70px 30px 80px; }
+  .wHead{ display:flex; align-items:baseline; justify-content:space-between; margin-bottom:40px; }
+  .wLabel{ font-family:'Playfair Display',serif; font-size:30px; font-weight:700; }
+  .wAll{ font-size:11px; letter-spacing:.18em; text-transform:uppercase; font-weight:700; border-bottom:1px solid rgba(0,0,0,.3); padding-bottom:2px; }
+  .wAll:hover{ color:#8a7c55; border-color:#8a7c55; }
+  .grid{ display:grid; grid-template-columns:repeat(3,1fr); gap:34px; }
+  .num{ font-family:'Playfair Display',serif; font-size:13px; color:#8a7c55; font-weight:700; }
+  .item img{ width:100%; height:300px; object-fit:cover; display:block; filter:grayscale(1); transition:filter .45s ease; margin:8px 0 12px; }
+  .item:hover img{ filter:grayscale(0); }
+  .iCat{ font-size:10px; letter-spacing:.2em; text-transform:uppercase; color:#8a7c55; font-weight:700; margin-bottom:4px; }
+  .iName{ font-family:'Playfair Display',serif; font-weight:600; font-size:19px; line-height:1.3; }
+
+  @media (max-width:760px){
+    .mastNav{ display:none; }
+    .coverSpec{ display:none; }
+    .coverH{ font-size:64px; }
+    .coverH .sm{ font-size:.28em; }
+    .coverCtas{ width:100%; }
+    .btn{ flex:1; text-align:center; }
+    .grid{ grid-template-columns:1fr; gap:26px; }
+    .item img{ height:240px; }
+    .cover img{ object-position:center 25%; }
+  }
+</style>
+</head>
+<body>
+
+  <!-- ================= COVER ================= -->
+  <section class="cover">
+    <img src="./assets/hero-on-set.jpg" alt="Ella De Castro on set">
+    <div class="coverInner">
+      <div class="mast">
+        <div class="mastName">Ella Stephenson De Castro</div>
+        <nav class="mastNav"><a href="#">Work</a><a href="#">Photography</a><a href="#">About</a><a href="#">Résumé</a></nav>
+      </div>
+      <div class="coverSpec">
+        <div><p class="lbl">Portfolio</p><p class="val">Selected Video Works</p></div>
+        <div><p class="lbl">Discipline</p><p class="val">Videographer, Editor &amp; Producer</p></div>
+        <div><p class="lbl">Based</p><p class="val">Florida State University — 2026</p></div>
+      </div>
+
+      <div class="coverTitle">
+        <div class="coverKick">The Portfolio</div>
+        <h1 class="coverH">Ella<br>De Castro
+          <span class="sm">Live broadcast, studio interviews, documentary, and visual storytelling — from ESPN and the ACC Network to a newsroom in Washington, D.C.</span>
+        </h1>
+        <div class="coverCtas">
+          <a class="btn solid" href="#">View Work</a>
+          <a class="btn" href="#">Résumé</a>
+        </div>
+      </div>
+    </div>
+    <div class="scrollCue">Scroll ↓</div>
+  </section>
+
+  <!-- ================= WORK ================= -->
+  <section class="work">
+    <div class="workInner">
+      <div class="wHead">
+        <span class="wLabel">Selected Work</span>
+        <a class="wAll" href="#">All work →</a>
+      </div>
+      <div class="grid">
+        <a class="item" href="#"><span class="num">01</span><img src="https://img.youtube.com/vi/oSG-CUB0ouE/mqdefault.jpg" alt=""><p class="iCat">Newsroom · Washington, D.C.</p><p class="iName">The Eduard Habsburg Interview</p></a>
+        <a class="item" href="#"><span class="num">02</span><img src="https://img.youtube.com/vi/8KyG5idt94U/mqdefault.jpg" alt=""><p class="iCat">Seminole Shows · Camera</p><p class="iName">Inside Seminole Football — Coach Mike Norvell</p></a>
+        <a class="item" href="#"><span class="num">03</span><img src="https://img.youtube.com/vi/Ez1Fy4xeEv4/mqdefault.jpg" alt=""><p class="iCat">Daily Caller · Correspondent</p><p class="iName">The Ashley Brasfield Series</p></a>
+      </div>
+    </div>
+  </section>
+
+</body>
+</html>
