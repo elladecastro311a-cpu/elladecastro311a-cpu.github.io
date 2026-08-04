@@ -1106,8 +1106,8 @@
     // Collapsible Daily Caller sections ("folders")
     const dcGroups = document.querySelectorAll(".dcGroup");
     dcGroups.forEach((g, i) => {
-      // First section open on load; the rest folded until tapped.
-      if(i > 0) g.classList.remove("open");
+      // All sections closed on load; tap to open.
+      g.classList.remove("open");
       const head = g.querySelector(".dcHead");
       if(!head) return;
       const toggle = () => g.classList.toggle("open");
